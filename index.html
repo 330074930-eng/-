@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="theme-color" content="#eef0f2">
-<title>拾光 les éclats · 白雾综合版</title>
+<title>鎷惧厜 les 茅clats 路 鐧介浘缁煎悎鐗?/title>
 <style>
 :root{
   --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px);
@@ -21,7 +21,7 @@ html,body{margin:0;min-height:100%}
 body{background:#eef0f2;color:var(--ink);font-family:var(--serif);font-weight:300;
   -webkit-font-smoothing:antialiased;overscroll-behavior:none}
 button{font:inherit;color:inherit;cursor:pointer}
-/* 白雾底 + 氛围 */
+/* 鐧介浘搴?+ 姘涘洿 */
 #photo{position:fixed;inset:0;z-index:-3;background:
   radial-gradient(ellipse at 18% 8%,rgba(255,255,255,.9),transparent 45%),
   radial-gradient(ellipse at 85% 78%,rgba(255,255,255,.85),transparent 40%),
@@ -44,7 +44,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .lbl{font-family:var(--sans);font-size:10px;letter-spacing:2px;color:var(--faint)}
 .app{position:relative;z-index:2;max-width:760px;margin:0 auto;
   padding:calc(14px + var(--safe-t)) 16px calc(40px + var(--safe-b))}
-/* 顶栏 */
+/* 椤舵爮 */
 .status{display:flex;justify-content:space-between;align-items:center;padding:2px 6px 10px;
   font-family:var(--sans);font-size:12px;font-weight:600;color:#5d646b}
 .topbar{display:flex;align-items:center;justify-content:space-between;padding:6px 2px 14px}
@@ -54,7 +54,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .ticons{display:flex;gap:10px}
 .tbtn{width:32px;height:32px;border-radius:50%;border:1px solid var(--stroke);background:var(--card);
   display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--dim);box-shadow:var(--shadow)}
-/* 兴趣标签 */
+/* 鍏磋叮鏍囩 */
 .chips-row{padding:14px 16px;margin-bottom:16px}
 .chips-head{display:flex;align-items:baseline;gap:8px;margin-bottom:12px}
 .chips-head b{font-size:15px;font-weight:400;letter-spacing:1px}
@@ -62,7 +62,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .chip{border:1px solid var(--hairline);border-radius:99px;padding:6px 13px;font-size:11.5px;
   color:var(--dim);background:rgba(255,255,255,.4);transition:.2s}
 .chip.on{background:#5a5f66;color:#fff;border-color:#5a5f66}
-/* SALLE 今日大卡 */
+/* SALLE 浠婃棩澶у崱 */
 .salle-head{text-align:center;margin:8px 0 12px;color:var(--faint);font-size:12px;letter-spacing:4px}
 .salle-head .l{display:inline-block;width:52px;height:1px;background:var(--hairline);vertical-align:middle;margin:0 12px}
 .salle{padding:20px 18px 16px;position:relative;overflow:hidden}
@@ -82,23 +82,23 @@ button{font:inherit;color:inherit;cursor:pointer}
 .salle-quote small{display:block;font-size:10.5px;color:var(--faint);margin-top:7px;letter-spacing:.5px}
 .salle-meta{font-size:11px;color:var(--dim);margin:10px 2px 0;letter-spacing:1px}
 .salle-meta b{font-weight:400;cursor:pointer;border-bottom:1px dashed var(--hairline)}
-/* 14 天日历 */
+/* 14 澶╂棩鍘?*/
 .cal{margin-top:16px;border-top:1px solid var(--stroke-soft);padding-top:12px}
 .cal-head{display:flex;justify-content:space-between;font-size:10px;color:var(--faint);margin-bottom:8px;letter-spacing:1px}
 .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
 .cal-grid .c{font-size:11px;color:var(--dim);padding:6px 0;border-radius:9px;cursor:pointer;position:relative}
 .cal-grid .c i{display:block;font-style:normal;font-size:7px;color:var(--faint);margin-bottom:1px}
 .cal-grid .c.today{background:#5a5f66;color:#fff}
-.cal-grid .c.has:after{content:"·";position:absolute;bottom:0;left:50%;transform:translateX(-50%);color:#9aa0a7}
+.cal-grid .c.has:after{content:"路";position:absolute;bottom:0;left:50%;transform:translateX(-50%);color:#9aa0a7}
 .cal-grid .c.today:after{color:#fff}
-/* 画/天文/牌 行 */
+/* 鐢?澶╂枃/鐗?琛?*/
 .day-rows{margin-top:14px;border-top:1px solid var(--stroke-soft);padding:12px 2px 2px;font-size:12px;line-height:2.1;color:var(--dim)}
 .day-rows b{font-weight:400;color:var(--ink)}
 .day-rows em{font-style:italic;color:var(--faint)}
-/* 存档条 */
+/* 瀛樻。鏉?*/
 .archive{display:flex;justify-content:center;gap:10px;align-items:center;margin:18px 0 6px;font-size:11px;color:var(--faint);letter-spacing:2px}
 .archive .l{width:60px;height:1px;background:var(--hairline)}
-/* 模块卡（回形针卡） */
+/* 妯″潡鍗★紙鍥炲舰閽堝崱锛?*/
 .mod-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
 .mod-card{padding:14px;min-height:150px;display:flex;flex-direction:column;position:relative;cursor:pointer;
   transition:transform .25s var(--spring)}
@@ -111,7 +111,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .mod-card .mname{font-size:16px;margin-top:10px;letter-spacing:1px}
 .mod-card .mname em{font-size:10px;margin-left:6px}
 .mod-card .msub{font-family:var(--sans);font-size:10px;color:var(--faint);margin-top:4px}
-/* 详情视图 */
+/* 璇︽儏瑙嗗浘 */
 .detail{margin-top:14px}
 .pane{padding:18px;margin-bottom:14px}
 .mhead{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
@@ -141,7 +141,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .add{width:100%;margin-top:12px;border:1px dashed var(--hairline);border-radius:14px;background:none;
   color:var(--dim);font-family:var(--sans);font-size:11.5px;letter-spacing:1.4px;padding:11px}
 .add:hover{background:rgba(255,255,255,.6)}
-/* 天气 / 音乐 / 聊天 */
+/* 澶╂皵 / 闊充箰 / 鑱婂ぉ */
 .wchip{border:1px solid var(--stroke);border-radius:16px;padding:12px 16px;text-align:center;background:var(--card2);min-width:88px}
 .wicon{font-size:24px;display:block}
 .wtemp{font-family:Georgia,serif;font-size:20px;margin-top:3px}
@@ -168,7 +168,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .bubble{max-width:84%;padding:10px 13px;border-radius:15px;background:rgba(255,255,255,.75);font-size:13px;line-height:1.7;align-self:flex-start}
 .bubble.me{align-self:flex-end;background:#e3e6ea}
 .choices{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
-/* 音乐插块（图一排版 + 图二唱片） */
+/* 闊充箰鎻掑潡锛堝浘涓€鎺掔増 + 鍥句簩鍞辩墖锛?*/
 .mblock{padding:18px 0 16px;margin-top:16px;overflow:hidden}
 .cf{position:relative;height:150px;display:flex;align-items:center;justify-content:center;margin-top:6px}
 .cf-card{position:absolute;width:104px;height:104px;border-radius:14px;background:#fff;
@@ -177,7 +177,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .cf-card .sq{width:100%;height:100%;background-size:cover;background-position:center;background-color:#e7e9ec}
 .cf-card.side{opacity:.55;filter:blur(1px) saturate(.6)}
 .cf-card.far{opacity:.3;filter:blur(2px) saturate(.5)}
-/* 白胶唱片（图二样式） */
+/* 鐧借兌鍞辩墖锛堝浘浜屾牱寮忥級 */
 .disc{position:relative;width:88px;height:88px;border-radius:50%;
   background:repeating-radial-gradient(circle at 50% 50%,#fafafa 0 1.6px,#eceef0 1.6px 3.2px);
   box-shadow:inset 0 0 0 1px rgba(120,128,138,.14),0 4px 14px rgba(110,118,128,.18)}
@@ -196,7 +196,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .cf-card.center{width:118px;height:118px;z-index:3}
 .cf-card.center .disc{width:104px;height:104px}
 .cf-card{cursor:pointer}
-/* 歌名胶囊 + 歌词 + 控制条 */
+/* 姝屽悕鑳跺泭 + 姝岃瘝 + 鎺у埗鏉?*/
 .np-pill{display:inline-flex;flex-direction:column;align-items:center;background:#fff;border:1px solid var(--stroke);
   border-radius:16px;padding:8px 22px;box-shadow:var(--shadow);margin:10px auto 0}
 .np-pill b{font-size:13.5px;font-weight:400;letter-spacing:1px}
@@ -213,7 +213,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .ctlbar .prog span{display:block;width:0;height:100%;background:#5a5f66;transition:width .2s}
 .ctlbar .heart.on{color:#d98a94}
 .ctlbar .up{width:30px;height:30px;border-radius:50%;border:1px dashed var(--hairline);background:none;color:var(--faint);font-size:13px}
-/* 擦雾开屏（第一版特效） */
+/* 鎿﹂浘寮€灞忥紙绗竴鐗堢壒鏁堬級 */
 #splash{position:fixed;inset:0;z-index:80;transition:opacity .9s ease,transform .9s ease}
 #splash.gone{opacity:0;transform:scale(1.04);pointer-events:none}
 #fog{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:crosshair}
@@ -236,7 +236,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .ui .bar{position:absolute;left:50%;bottom:calc(20px + var(--safe-b));transform:translateX(-50%);width:110px;height:2px;
   background:rgba(90,95,102,.16);border-radius:2px;overflow:hidden}
 .ui .bar i{display:block;height:100%;width:0;background:#8b9096;transition:width .25s}
-/* 拍立得对话页（图二排版） */
+/* 鎷嶇珛寰楀璇濋〉锛堝浘浜屾帓鐗堬級 */
 #dlg{position:fixed;inset:0;z-index:75;display:none;overflow:hidden;background:#dfe3e6}
 #dlg.on{display:block;animation:fade .4s var(--spring) both}
 #dlgBg{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(.7) brightness(1.02)}
@@ -268,7 +268,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .dlg-quote{font-size:13.5px;line-height:2;color:#4a4f55;letter-spacing:.5px}
 .dlg-add{position:absolute;left:8%;top:21%;z-index:2;display:none}
 .admin .dlg-add{display:block}
-/* 私聊界面 */
+/* 绉佽亰鐣岄潰 */
 #sms{position:fixed;inset:0;z-index:76;display:none;background:rgba(255,255,255,.86);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
 #sms.on{display:block;animation:fade .4s var(--spring) both}
 .sms-top{display:flex;align-items:center;justify-content:space-between;padding:calc(12px + var(--safe-t)) 14px 8px}
@@ -309,7 +309,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .emoji-row.on{display:flex}
 .emoji-row button{border:none;background:none;font-size:24px;padding:4px 6px;flex:none}
 .admin .mbl{cursor:pointer}
-/* 弹层 */
+/* 寮瑰眰 */
 #mask{position:fixed;inset:0;background:rgba(90,95,102,.22);opacity:0;pointer-events:none;transition:.3s;z-index:60}
 #mask.on{opacity:1;pointer-events:auto}
 #sheet{position:fixed;left:50%;bottom:0;transform:translate(-50%,110%);width:min(460px,94vw);max-height:80vh;overflow-y:auto;
@@ -341,14 +341,14 @@ button{font:inherit;color:inherit;cursor:pointer}
 </style>
 </head>
 <body>
-<!-- 擦雾开屏 -->
+<!-- 鎿﹂浘寮€灞?-->
 <div id="splash">
   <canvas id="fog"></canvas>
   <div class="ui">
-    <div class="intro"><div class="en">TOUCH THE GLASS.</div><div class="cn">用手指擦开这层雾。</div></div>
+    <div class="intro"><div class="en">TOUCH THE GLASS.</div><div class="cn">鐢ㄦ墜鎸囨摝寮€杩欏眰闆俱€?/div></div>
     <div class="mt mt-small">Clear water reflects the heart</div>
     <button class="enter" id="enter">ENTER</button>
-    <div class="hint">滑动擦雾 · 雾散见光</div>
+    <div class="hint">婊戝姩鎿﹂浘 路 闆炬暎瑙佸厜</div>
     <div class="bar"><i id="barIn"></i></div>
   </div>
 </div>
@@ -359,29 +359,29 @@ button{font:inherit;color:inherit;cursor:pointer}
 <div class="snow-fx" id="snowFx"></div>
 
 <div class="app">
-  <div class="status"><span id="clock">23:50</span><span>▮▮▮ ◉ ▰</span></div>
+  <div class="status"><span id="clock">23:50</span><span>鈻柈鈻?鈼?鈻?/span></div>
   <div class="topbar">
-    <button class="back" onclick="history.length>1?history.back():toast('已在首页')">‹</button>
-    <div class="brand">拾光 <em>les éclats</em></div>
+    <button class="back" onclick="history.length>1?history.back():toast('宸插湪棣栭〉')">鈥?/button>
+    <div class="brand">鎷惧厜 <em>les 茅clats</em></div>
     <div class="ticons">
-      <button class="tbtn" id="smsBtn" title="私聊">✉</button>
-      <button class="tbtn" id="againBtn" title="重看开屏">◑</button>
-      <button class="tbtn" id="roleBtn" title="管理员">⌘</button>
-      <button class="tbtn" id="wpBtn" title="壁纸">▦</button>
+      <button class="tbtn" id="smsBtn" title="绉佽亰">鉁?/button>
+      <button class="tbtn" id="againBtn" title="閲嶇湅寮€灞?>鈼?/button>
+      <button class="tbtn" id="roleBtn" title="绠＄悊鍛?>鈱?/button>
+      <button class="tbtn" id="wpBtn" title="澹佺焊">鈻?/button>
     </div>
   </div>
 
-  <!-- 兴趣标签 -->
+  <!-- 鍏磋叮鏍囩 -->
   <div class="card chips-row">
-    <div class="chips-head"><b>兴趣</b><em class="en-i">mes goûts</em>
-      <span class="lbl" style="margin-left:auto" id="chipCount">文 5 · 图 10</span></div>
+    <div class="chips-head"><b>鍏磋叮</b><em class="en-i">mes go没ts</em>
+      <span class="lbl" style="margin-left:auto" id="chipCount">鏂?5 路 鍥?10</span></div>
     <div class="chips" id="chips"></div>
   </div>
 
-  <!-- SALLE 今日 -->
-  <div class="salle-head"><span class="l"></span>SALLE I<span style="margin:0 8px">·</span>今日<span class="l"></span></div>
+  <!-- SALLE 浠婃棩 -->
+  <div class="salle-head"><span class="l"></span>SALLE I<span style="margin:0 8px">路</span>浠婃棩<span class="l"></span></div>
   <div class="card salle">
-    <button class="arrange" id="arrangeBtn">编排 ›</button>
+    <button class="arrange" id="arrangeBtn">缂栨帓 鈥?/button>
     <div class="salle-top">
       <div class="pol-stack">
         <div class="pol p2" id="pol2"></div>
@@ -390,149 +390,148 @@ button{font:inherit;color:inherit;cursor:pointer}
       <div class="datebox">
         <div class="auj">aujourd'hui</div>
         <div class="dnum" id="dnum">16</div>
-        <div class="dsub" id="dsub">十月 · 周五</div>
+        <div class="dsub" id="dsub">鍗佹湀 路 鍛ㄤ簲</div>
       </div>
     </div>
-    <div class="salle-quote" id="dayQuote">Love is boring and passé, all that old…
-      <small id="dayQuoteBy">Lynn Emanuel ·《Blonde Bombshell》</small></div>
-    <div class="salle-meta">⁕ 今日 · <b id="dayCount">5</b> 件 · <b onclick="toggleCal()" id="flipBtn">翻开 ›</b></div>
+    <div class="salle-quote" id="dayQuote">Love is boring and pass茅, all that old鈥?      <small id="dayQuoteBy">Lynn Emanuel 路銆夿londe Bombshell銆?/small></div>
+    <div class="salle-meta">鈦?浠婃棩 路 <b id="dayCount">5</b> 浠?路 <b onclick="toggleCal()" id="flipBtn">缈诲紑 鈥?/b></div>
     <div class="cal" id="calBox" hidden>
-      <div class="cal-head"><span>往前 14 天 · 点一天看那天</span><span id="calRange"></span></div>
+      <div class="cal-head"><span>寰€鍓?14 澶?路 鐐逛竴澶╃湅閭ｅぉ</span><span id="calRange"></span></div>
       <div class="cal-grid" id="calGrid"></div>
     </div>
     <div class="day-rows" id="dayRows"></div>
   </div>
 
-  <!-- 音乐插块：层叠封面 + 白胶唱片 -->
+  <!-- 闊充箰鎻掑潡锛氬眰鍙犲皝闈?+ 鐧借兌鍞辩墖 -->
   <div class="card mblock">
-    <div class="mhead" style="padding:0 18px"><h2 style="font-size:15px">听歌栏</h2><em class="en-i">listen · musical journey</em>
+    <div class="mhead" style="padding:0 18px"><h2 style="font-size:15px">鍚瓕鏍?/h2><em class="en-i">listen 路 musical journey</em>
       <span class="lbl" style="margin-left:auto" id="mbCount"></span></div>
     <div class="cf" id="cf"></div>
     <div class="np-wrap">
-      <div class="np-pill"><b id="cfName">楼下等你</b><small id="cfArtist">Young 7</small></div>
-      <div class="lyr" id="cfLyr">就像是妳的宇宙 小小星球 填满自由<br><b>一直就走到以后 你的温柔 尝到甜头</b><br>想要在楼下等你 对你说声 Hello</div>
+      <div class="np-pill"><b id="cfName">妤间笅绛変綘</b><small id="cfArtist">Young 7</small></div>
+      <div class="lyr" id="cfLyr">灏卞儚鏄Τ鐨勫畤瀹?灏忓皬鏄熺悆 濉弧鑷敱<br><b>涓€鐩村氨璧板埌浠ュ悗 浣犵殑娓╂煍 灏濆埌鐢滃ご</b><br>鎯宠鍦ㄦゼ涓嬬瓑浣?瀵逛綘璇村０ Hello</div>
     </div>
     <div class="ctlbar">
-      <button class="cbtn" onclick="prevTrack()">⏮</button>
-      <button class="cbtn" id="cfPlay" onclick="togglePlay()">▶</button>
-      <button class="cbtn" onclick="nextTrack()">⏭</button>
+      <button class="cbtn" onclick="prevTrack()">鈴?/button>
+      <button class="cbtn" id="cfPlay" onclick="togglePlay()">鈻?/button>
+      <button class="cbtn" onclick="nextTrack()">鈴?/button>
       <div class="prog" id="cfProg"><span id="cfFill"></span></div>
-      <button class="cbtn" title="信箱" onclick="document.getElementById('paneChat').scrollIntoView({behavior:'smooth'})">✉</button>
-      <button class="cbtn" title="歌单" onclick="openPlaylist()">☰</button>
-      <button class="cbtn heart" id="cfHeart" onclick="toggleHeart()">♡</button>
-      <button class="up" title="上传 MP3" onclick="document.getElementById('mp3Input').click()">＋</button>
+      <button class="cbtn" title="淇＄" onclick="document.getElementById('paneChat').scrollIntoView({behavior:'smooth'})">鉁?/button>
+      <button class="cbtn" title="姝屽崟" onclick="openPlaylist()">鈽?/button>
+      <button class="cbtn heart" id="cfHeart" onclick="toggleHeart()">鈾?/button>
+      <button class="up" title="涓婁紶 MP3" onclick="document.getElementById('mp3Input').click()">锛?/button>
     </div>
   </div>
 
-  <div class="archive"><span class="l"></span>存档 · 每天自动存一份 <em class="en-i">les archives</em><span class="l"></span></div>
+  <div class="archive"><span class="l"></span>瀛樻。 路 姣忓ぉ鑷姩瀛樹竴浠?<em class="en-i">les archives</em><span class="l"></span></div>
 
-  <!-- 模块卡 -->
+  <!-- 妯″潡鍗?-->
   <div class="mod-grid" id="modGrid"></div>
 
-  <!-- 详情区 -->
+  <!-- 璇︽儏鍖?-->
   <div class="detail" id="detail" hidden>
     <div class="card pane">
-      <div class="mhead"><h2 id="modH1">模块</h2><em class="en-i" id="modEn">module</em></div>
-      <textarea class="ed" id="modText" placeholder="在这里写下内容…"></textarea>
+      <div class="mhead"><h2 id="modH1">妯″潡</h2><em class="en-i" id="modEn">module</em></div>
+      <textarea class="ed" id="modText" placeholder="鍦ㄨ繖閲屽啓涓嬪唴瀹光€?></textarea>
       <div class="gal" id="gal"></div>
       <div id="modBar" style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap"></div>
     </div>
-    <div class="mhead" style="padding:0 4px"><h2 style="font-size:15px">图文分栏</h2><em class="en-i">blocks</em></div>
+    <div class="mhead" style="padding:0 4px"><h2 style="font-size:15px">鍥炬枃鍒嗘爮</h2><em class="en-i">blocks</em></div>
     <div class="cols" id="cols"></div>
-    <button class="add" id="addBlock">＋ 添加分栏</button>
+    <button class="add" id="addBlock">锛?娣诲姞鍒嗘爮</button>
   </div>
 
-  <!-- 天气 / 音乐 / 聊天 -->
+  <!-- 澶╂皵 / 闊充箰 / 鑱婂ぉ -->
   <div class="card pane" id="paneWeather" hidden>
     <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
       <div>
-        <div class="mhead"><h2>天气氛围</h2><em class="en-i">weather</em></div>
-        <p style="margin:0;font-size:13px;color:var(--dim);line-height:1.8" id="wQuote">“雾散之后，见光。”</p>
+        <div class="mhead"><h2>澶╂皵姘涘洿</h2><em class="en-i">weather</em></div>
+        <p style="margin:0;font-size:13px;color:var(--dim);line-height:1.8" id="wQuote">鈥滈浘鏁ｄ箣鍚庯紝瑙佸厜銆傗€?/p>
       </div>
-      <div class="wchip"><span class="wicon" id="wIcon">☁</span><span class="wtemp" id="wTemp">16°</span><div class="wsmall" id="wLabel">Tokyo · 多云</div></div>
+      <div class="wchip"><span class="wicon" id="wIcon">鈽?/span><span class="wtemp" id="wTemp">16掳</span><div class="wsmall" id="wLabel">Tokyo 路 澶氫簯</div></div>
     </div>
     <div class="wdetail">
-      <div>体感温度<b id="wFeel">16°C</b></div><div>湿度<b id="wHum">68%</b></div>
-      <div>风速<b id="wWind">3.2 m/s</b></div><div>空气状态<b id="wAir">薄雾</b></div>
+      <div>浣撴劅娓╁害<b id="wFeel">16掳C</b></div><div>婀垮害<b id="wHum">68%</b></div>
+      <div>椋庨€?b id="wWind">3.2 m/s</b></div><div>绌烘皵鐘舵€?b id="wAir">钖勯浘</b></div>
     </div>
     <div class="wopts" id="wOpts">
-      <button data-w="sun">☀ 晴</button><button data-w="cloud" class="on">☁ 多云</button>
-      <button data-w="rain">☂ 雨</button><button data-w="snow">❄ 雪</button><button data-w="mist">〰 雾</button>
+      <button data-w="sun">鈽€ 鏅?/button><button data-w="cloud" class="on">鈽?澶氫簯</button>
+      <button data-w="rain">鈽?闆?/button><button data-w="snow">鉂?闆?/button><button data-w="mist">銆?闆?/button>
     </div>
   </div>
 
   <div class="card pane" id="paneMusic" hidden>
-    <div class="mhead"><h2>听歌栏</h2><em class="en-i">listen · a song for the rain</em></div>
+    <div class="mhead"><h2>鍚瓕鏍?/h2><em class="en-i">listen 路 a song for the rain</em></div>
     <div class="music">
-      <div class="album">♪</div>
+      <div class="album">鈾?/div>
       <div class="music-info">
         <b id="trackName">The Milky Way over Manhattan</b>
-        <small id="trackArtist">Rainy Season · 本地音乐</small>
+        <small id="trackArtist">Rainy Season 路 鏈湴闊充箰</small>
         <div class="progress"><span id="progressFill"></span></div>
         <div class="mctl">
-          <button class="round" onclick="prevTrack()">Ⅱ</button>
-          <button class="round play" id="playBtn" onclick="togglePlay()">▶</button>
-          <button class="round" onclick="nextTrack()">♫</button>
-          <button class="round" onclick="document.getElementById('mp3Input').click()">＋</button>
+          <button class="round" onclick="prevTrack()">鈪?/button>
+          <button class="round play" id="playBtn" onclick="togglePlay()">鈻?/button>
+          <button class="round" onclick="nextTrack()">鈾?/button>
+          <button class="round" onclick="document.getElementById('mp3Input').click()">锛?/button>
         </div>
       </div>
     </div>
-    <p class="lbl" style="margin-top:12px">可上传本地 MP3，仅在当前浏览器中播放。</p>
+    <p class="lbl" style="margin-top:12px">鍙笂浼犳湰鍦?MP3锛屼粎鍦ㄥ綋鍓嶆祻瑙堝櫒涓挱鏀俱€?/p>
   </div>
 
   <div class="card pane" id="paneChat" hidden>
-    <div class="mhead"><h2>雨季的信箱</h2><em class="en-i">little dialogue</em></div>
-    <div class="chat-log" id="chatLog"><div class="bubble">你好，欢迎来到拾光 × 雨季。今天想做些什么？</div></div>
+    <div class="mhead"><h2>闆ㄥ鐨勪俊绠?/h2><em class="en-i">little dialogue</em></div>
+    <div class="chat-log" id="chatLog"><div class="bubble">浣犲ソ锛屾杩庢潵鍒版嬀鍏?脳 闆ㄥ銆備粖澶╂兂鍋氫簺浠€涔堬紵</div></div>
     <div class="choices" id="chatChoices">
-      <button class="chip" data-c="profile">了解我</button>
-      <button class="chip" data-c="schedule">查看排单</button>
-      <button class="chip" data-c="music">听一首歌</button>
-      <button class="chip" data-c="weather">更换天气</button>
-      <button class="chip" data-c="message">留下留言</button>
+      <button class="chip" data-c="profile">浜嗚В鎴?/button>
+      <button class="chip" data-c="schedule">鏌ョ湅鎺掑崟</button>
+      <button class="chip" data-c="music">鍚竴棣栨瓕</button>
+      <button class="chip" data-c="weather">鏇存崲澶╂皵</button>
+      <button class="chip" data-c="message">鐣欎笅鐣欒█</button>
     </div>
     <div id="messageBox" hidden style="margin-top:10px">
-      <input class="sheetin" id="visitorMessage" placeholder="写下一句话……">
-      <button class="act" onclick="sendMessage()">发送留言</button>
+      <input class="sheetin" id="visitorMessage" placeholder="鍐欎笅涓€鍙ヨ瘽鈥︹€?>
+      <button class="act" onclick="sendMessage()">鍙戦€佺暀瑷€</button>
     </div>
   </div>
 
   <footer style="text-align:center;padding:26px 0 8px;font-size:11px;color:var(--faint);letter-spacing:2px">
-    拾光 les éclats × 雨季 Rainy Season<br><span class="en-i" style="font-size:10px">a soft place to land.</span></footer>
+    鎷惧厜 les 茅clats 脳 闆ㄥ Rainy Season<br><span class="en-i" style="font-size:10px">a soft place to land.</span></footer>
 </div>
 
-<!-- 拍立得对话页 -->
+<!-- 鎷嶇珛寰楀璇濋〉 -->
 <div id="dlg">
   <div id="dlgBg"></div>
   <div class="dlg-top">
-    <button class="dlg-btn" onclick="closeDlg()">‹ 返回</button>
-    <button class="dlg-btn" id="dlgGear">⚙ 设置</button>
+    <button class="dlg-btn" onclick="closeDlg()">鈥?杩斿洖</button>
+    <button class="dlg-btn" id="dlgGear">鈿?璁剧疆</button>
   </div>
-  <div class="dlg-ehint">管理员模式 · 点对话条 / 署名 / 段落 / 背景即可直接编辑</div>
+  <div class="dlg-ehint">绠＄悊鍛樻ā寮?路 鐐瑰璇濇潯 / 缃插悕 / 娈佃惤 / 鑳屾櫙鍗冲彲鐩存帴缂栬緫</div>
   <div class="dlg-bars" id="dlgBars"></div>
   <div class="dlg-foot">
-    <div class="dlg-name-wrap"><div class="dlg-name" id="dlgName">陈阿肆<small>name.chenasi</small></div><button class="dlg-mini" id="dlgNameEdit">✎</button></div>
-    <div class="dlg-quote-wrap"><div class="dlg-quote" id="dlgQuote">春天过去，夏天来的时候。会下很大的雨，听歌都会有伴奏。<br>小雨开窗空气很好，会很想你。</div><button class="dlg-mini" id="dlgQuoteEdit">✎</button></div>
+    <div class="dlg-name-wrap"><div class="dlg-name" id="dlgName">闄堥樋鑲?small>name.chenasi</small></div><button class="dlg-mini" id="dlgNameEdit">鉁?/button></div>
+    <div class="dlg-quote-wrap"><div class="dlg-quote" id="dlgQuote">鏄ュぉ杩囧幓锛屽澶╂潵鐨勬椂鍊欍€備細涓嬪緢澶х殑闆紝鍚瓕閮戒細鏈変即濂忋€?br>灏忛洦寮€绐楃┖姘斿緢濂斤紝浼氬緢鎯充綘銆?/div><button class="dlg-mini" id="dlgQuoteEdit">鉁?/button></div>
   </div>
 </div>
 
-<!-- 私聊界面 -->
+<!-- 绉佽亰鐣岄潰 -->
 <div id="sms">
   <div class="sms-top">
-    <button class="back" onclick="closeSms()">‹ <b id="smsNum">2969</b></button>
-    <button class="sms-gear" id="smsGear">⚙</button>
+    <button class="back" onclick="closeSms()">鈥?<b id="smsNum">2969</b></button>
+    <button class="sms-gear" id="smsGear">鈿?/button>
   </div>
   <div class="sms-head">
-    <div class="sms-av" id="smsAv">♡</div>
-    <div class="sms-name"><span id="smsName">1</span><span>›</span></div>
-    <div class="sms-hint">Text Message · SMS · Today</div>
+    <div class="sms-av" id="smsAv">鈾?/div>
+    <div class="sms-name"><span id="smsName">1</span><span>鈥?/span></div>
+    <div class="sms-hint">Text Message 路 SMS 路 Today</div>
   </div>
   <div class="sms-body" id="smsBody"></div>
   <div class="emoji-row" id="emojiRow"></div>
   <div class="sms-bar">
-    <button class="sb" id="emojiBtn">☺</button>
-    <button class="sb" id="smsPlus">＋</button>
+    <button class="sb" id="emojiBtn">鈽?/button>
+    <button class="sb" id="smsPlus">锛?/button>
     <input id="smsInput" placeholder="iMessage" autocomplete="off">
-    <button class="send" onclick="smsSend()">发送</button>
+    <button class="send" onclick="smsSend()">鍙戦€?/button>
   </div>
 </div>
 
@@ -548,67 +547,122 @@ button{font:inherit;color:inherit;cursor:pointer}
 const $=id=>document.getElementById(id);
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const LS='shiguang_whitemist_v1', ADMIN_PWD='rainy2026';
+const API_URL='/api/data';
+let saveTimer=null, isSaving=false;
 
 const WPS=[
- {id:'mist',name:'白雾',css:'radial-gradient(ellipse at 18% 8%,rgba(255,255,255,.9),transparent 45%),radial-gradient(ellipse at 85% 78%,rgba(255,255,255,.85),transparent 40%),linear-gradient(165deg,#f4f5f6 0%,#e8eaec 50%,#dfe2e5 100%)'},
- {id:'dawn',name:'晨雾',css:'linear-gradient(165deg,#F6EDE4 0%,#EBD8C6 50%,#D8C3B2 100%)'},
- {id:'lake',name:'湖面',css:'linear-gradient(170deg,#EDF3F5 0%,#D5E3E9 50%,#BCCFD8 100%)'},
- {id:'forest',name:'林雾',css:'linear-gradient(155deg,#F0F3EE 0%,#DCE6DC 50%,#C2D2C4 100%)'},
- {id:'rose',name:'薄霞',css:'linear-gradient(165deg,#F9F0F1 0%,#EFDDE0 50%,#DEC6CB 100%)'}];
+ {id:'mist',name:'鐧介浘',css:'radial-gradient(ellipse at 18% 8%,rgba(255,255,255,.9),transparent 45%),radial-gradient(ellipse at 85% 78%,rgba(255,255,255,.85),transparent 40%),linear-gradient(165deg,#f4f5f6 0%,#e8eaec 50%,#dfe2e5 100%)'},
+ {id:'dawn',name:'鏅ㄩ浘',css:'linear-gradient(165deg,#F6EDE4 0%,#EBD8C6 50%,#D8C3B2 100%)'},
+ {id:'lake',name:'婀栭潰',css:'linear-gradient(170deg,#EDF3F5 0%,#D5E3E9 50%,#BCCFD8 100%)'},
+ {id:'forest',name:'鏋楅浘',css:'linear-gradient(155deg,#F0F3EE 0%,#DCE6DC 50%,#C2D2C4 100%)'},
+ {id:'rose',name:'钖勯湠',css:'linear-gradient(165deg,#F9F0F1 0%,#EFDDE0 50%,#DEC6CB 100%)'}];
 
 const DEF={
  admin:false,
  wallpaper:{type:'preset',id:'mist',url:''},
  weather:'mist',
- chips:['图片','神圣与华丽','前端前沿','宇宙与深海','植物与动物','名画鉴赏','现代艺术','世界景观'],
- chipOn:'图片',
- dayQuote:'Love is boring and passé, all that old…',
- dayQuoteBy:'Lynn Emanuel ·《Blonde Bombshell》',
- dayRows:[['画','Maine Coast, Rockwell Kent'],['天文图','The Milky Way over Manhattan'],['牌','圣杯七 · 正位']],
+ chips:['鍥剧墖','绁炲湥涓庡崕涓?,'鍓嶇鍓嶆部','瀹囧畽涓庢繁娴?,'妞嶇墿涓庡姩鐗?,'鍚嶇敾閴磋祻','鐜颁唬鑹烘湳','涓栫晫鏅'],
+ chipOn:'鍥剧墖',
+ dayQuote:'Love is boring and pass茅, all that old鈥?,
+ dayQuoteBy:'Lynn Emanuel 路銆夿londe Bombshell銆?,
+ dayRows:[['鐢?,'Maine Coast, Rockwell Kent'],['澶╂枃鍥?,'The Milky Way over Manhattan'],['鐗?,'鍦ｆ澂涓?路 姝ｄ綅']],
  pols:['https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=70',
         'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=70'],
  mods:[
-  {key:'poem',cn:'诗笺',en:'les vers',sub:'2 首 · 每天一份',thumb:'',vert:'あなたが生まれたその日に',text:'“有些话不必说太多，一个眼神就足够。”\n\n“生活很苦，但我很甜。”',images:[],links:[]},
-  {key:'gallery',cn:'画廊',en:'la galerie',sub:'2 幅 · 每天一份',thumb:'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=70',vert:'',text:'荣誉与画廊展示区。',images:[],links:[]},
-  {key:'star',cn:'星图',en:'le ciel',sub:'2 张 · 每天一份',thumb:'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=70',vert:'',text:'今夜星空与天文图。',images:[],links:[]},
-  {key:'tarot',cn:'牌签',en:'les lames',sub:'2 张牌 · 每天一份',thumb:'',vert:'',text:'圣杯七 · 正位\n\n幻想与选择之间，留一点清醒。',images:[],links:[]},
-  {key:'schedule',cn:'排单表',en:'schedule',sub:'3 条 · 进行中',thumb:'',vert:'',text:'10.28 音乐周边设计 · 进行中\n10.30 个人主页开发 · 待确认\n11.02 插画绘制 · 排队中',images:[],links:[]},
-  {key:'notice',cn:'介绍须知',en:'notice',sub:'请先阅读',thumb:'',vert:'',text:'欢迎来到拾光 × 雨季。\n\n请保持礼貌与边界感，谨慎分享个人信息。',images:[],links:[]}
+  {key:'poem',cn:'璇楃',en:'les vers',sub:'2 棣?路 姣忓ぉ涓€浠?,thumb:'',vert:'銇傘仾銇熴亴鐢熴伨銈屻仧銇濄伄鏃ャ伀',text:'鈥滄湁浜涜瘽涓嶅繀璇村お澶氾紝涓€涓溂绁炲氨瓒冲銆傗€漒n\n鈥滅敓娲诲緢鑻︼紝浣嗘垜寰堢敎銆傗€?,images:[],links:[]},
+  {key:'gallery',cn:'鐢诲粖',en:'la galerie',sub:'2 骞?路 姣忓ぉ涓€浠?,thumb:'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=70',vert:'',text:'鑽ｈ獕涓庣敾寤婂睍绀哄尯銆?,images:[],links:[]},
+  {key:'star',cn:'鏄熷浘',en:'le ciel',sub:'2 寮?路 姣忓ぉ涓€浠?,thumb:'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=70',vert:'',text:'浠婂鏄熺┖涓庡ぉ鏂囧浘銆?,images:[],links:[]},
+  {key:'tarot',cn:'鐗岀',en:'les lames',sub:'2 寮犵墝 路 姣忓ぉ涓€浠?,thumb:'',vert:'',text:'鍦ｆ澂涓?路 姝ｄ綅\n\n骞绘兂涓庨€夋嫨涔嬮棿锛岀暀涓€鐐规竻閱掋€?,images:[],links:[]},
+  {key:'schedule',cn:'鎺掑崟琛?,en:'schedule',sub:'3 鏉?路 杩涜涓?,thumb:'',vert:'',text:'10.28 闊充箰鍛ㄨ竟璁捐 路 杩涜涓璡n10.30 涓汉涓婚〉寮€鍙?路 寰呯‘璁n11.02 鎻掔敾缁樺埗 路 鎺掗槦涓?,images:[],links:[]},
+  {key:'notice',cn:'浠嬬粛椤荤煡',en:'notice',sub:'璇峰厛闃呰',thumb:'',vert:'',text:'娆㈣繋鏉ュ埌鎷惧厜 脳 闆ㄥ銆俓n\n璇蜂繚鎸佺ぜ璨屼笌杈圭晫鎰燂紝璋ㄦ厧鍒嗕韩涓汉淇℃伅銆?,images:[],links:[]}
  ],
  blocks:{poem:[
-  {image:'',text:'分栏一：图文可以左右排列，也可以单独放文字。点图片可换图，「↑ / ↓」可调顺序。'},
-  {image:'',text:'分栏二：这一栏只放文字，图片留空即隐藏。'}]}
+  {image:'',text:'鍒嗘爮涓€锛氬浘鏂囧彲浠ュ乏鍙虫帓鍒楋紝涔熷彲浠ュ崟鐙斁鏂囧瓧銆傜偣鍥剧墖鍙崲鍥撅紝銆屸啈 / 鈫撱€嶅彲璋冮『搴忋€?},
+  {image:'',text:'鍒嗘爮浜岋細杩欎竴鏍忓彧鏀炬枃瀛楋紝鍥剧墖鐣欑┖鍗抽殣钘忋€?}]}
 };
 let S=JSON.parse(JSON.stringify(DEF));
-try{const raw=localStorage.getItem(LS);if(raw)S=Object.assign(S,JSON.parse(raw));}catch(e){}
+// admin 鐘舵€佸彧淇濆瓨鍦ㄦ湰鍦帮紝涓嶅悓姝?try{const raw=localStorage.getItem(LS);if(raw){const local=JSON.parse(raw);S.admin=local.admin||false;}}catch(e){}
 S.mods.forEach(m=>{if(!S.blocks[m.key])S.blocks[m.key]=[];});
 let view=null;
-function save(){try{localStorage.setItem(LS,JSON.stringify(S));}catch(e){}}
+
+let saveTimer=null, isSaving=false;
+
+// 闃叉姈淇濆瓨锛堟墍鏈夊師鏉ヨ皟鐢?save() 鐨勫湴鏂硅嚜鍔ㄥ彉鎴愰槻鎶栵級
+function save(){
+  if(saveTimer)clearTimeout(saveTimer);
+  saveTimer=setTimeout(()=>doSave(),800);
+}
+
+async function doSave(){
+  if(isSaving)return;
+  isSaving=true;
+  try{
+    const dataToSave={...S};
+    delete dataToSave.admin; // 涓嶅悓姝?admin 鐘舵€?    const res=await fetch(API_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({pwd:ADMIN_PWD,data:dataToSave})
+    });
+    if(res.ok){
+      console.log('淇濆瓨鎴愬姛');
+    }else{
+      console.error('淇濆瓨澶辫触',res.status);
+    }
+  }catch(e){
+    console.error('淇濆瓨鍑洪敊',e);
+  }finally{
+    isSaving=false;
+  }
+}
+
+// 浠?API 鍔犺浇鏁版嵁
+async function loadFromAPI(){
+  try{
+    const res=await fetch(API_URL);
+    if(res.ok){
+      const remote=await res.json();
+      if(remote&&Object.keys(remote).length>0){
+        S=Object.assign(S,remote);
+        S.mods.forEach(m=>{if(!S.blocks[m.key])S.blocks[m.key]=[];});
+        // 閲嶆柊娓叉煋鎵€鏈夊唴瀹?        applyRole();
+        if(view)renderModule(view);
+        renderToday();
+        renderModGrid();
+        renderChips();
+        applyWallpaper();
+        setWeather(S.weather||'mist',true);
+        console.log('浠庢湇鍔″櫒鍔犺浇鎴愬姛');
+      }
+    }
+  }catch(e){
+    console.error('鍔犺浇澶辫触锛屼娇鐢ㄩ粯璁ゆ暟鎹?,e);
+  }
+}
 const cur=()=>S.mods.find(m=>m.key===view)||S.mods[0];
 
 let tt;function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('on'),1900);}
 
-/* 时钟 */
+/* 鏃堕挓 */
 function clock(){const d=new Date();$('clock').textContent=d.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',hour12:false});}
 clock();setInterval(clock,30000);
 
-/* 壁纸 */
+/* 澹佺焊 */
 function applyWallpaper(){const w=S.wallpaper,p=$('photo');
  if(w.type==='image'&&w.url)p.style.background=`url("${w.url}") center/cover`;
  else p.style.background=(WPS.find(x=>x.id===w.id)||WPS[0]).css;}
 function openWallpaper(){
- if(!S.admin)return toast('访客模式 · 仅管理员可更换壁纸');
- openSheet({title:'壁纸',sub:'WALLPAPER · 点击切换，可上传自己的图',groups:[
+ if(!S.admin)return toast('璁垮妯″紡 路 浠呯鐞嗗憳鍙洿鎹㈠绾?);
+ openSheet({title:'澹佺焊',sub:'WALLPAPER 路 鐐瑰嚮鍒囨崲锛屽彲涓婁紶鑷繁鐨勫浘',groups:[
   [{id:'wpGrid',html:`<div class="wp">${WPS.map(w=>`<button data-wp="${w.id}" class="${S.wallpaper.id===w.id&&S.wallpaper.type!=='image'?'on':''}" style="background:${w.css}"></button>`).join('')}</div>`}],
-  [{id:'wpUp',label:'上传我的壁纸',sub:'本地图片',run:()=>$('fileWp').click()}],
-  [{id:'wpReset',label:'恢复默认白雾',br:true,run:()=>{S.wallpaper={type:'preset',id:'mist',url:''};applyWallpaper();save();toast('已恢复默认壁纸');}}]]});
+  [{id:'wpUp',label:'涓婁紶鎴戠殑澹佺焊',sub:'鏈湴鍥剧墖',run:()=>$('fileWp').click()}],
+  [{id:'wpReset',label:'鎭㈠榛樿鐧介浘',br:true,run:()=>{S.wallpaper={type:'preset',id:'mist',url:''};applyWallpaper();save();toast('宸叉仮澶嶉粯璁ゅ绾?);}}]]});
  $('sheetBody').querySelectorAll('[data-wp]').forEach(b=>b.onclick=()=>{
-  S.wallpaper={type:'preset',id:b.dataset.wp,url:''};applyWallpaper();save();closeSheet();toast('壁纸已切换');});}
+  S.wallpaper={type:'preset',id:b.dataset.wp,url:''};applyWallpaper();save();closeSheet();toast('澹佺焊宸插垏鎹?);});}
 $('wpBtn').onclick=openWallpaper;
 $('fileWp').onchange=e=>{const f=e.target.files[0];e.target.value='';if(!f)return;
- const r=new FileReader();r.onload=()=>{S.wallpaper={type:'image',id:'',url:r.result};applyWallpaper();save();toast('壁纸已更换');};r.readAsDataURL(f);};
+ const r=new FileReader();r.onload=()=>{S.wallpaper={type:'image',id:'',url:r.result};applyWallpaper();save();toast('澹佺焊宸叉洿鎹?);};r.readAsDataURL(f);};
 
-/* 弹层 */
+/* 寮瑰眰 */
 const sheet=$('sheet'),mask=$('mask');
 function openSheet({title,sub,groups}){
  $('sheetTt').textContent=title||'';$('sheetSub').textContent=sub||'';
@@ -624,95 +678,95 @@ function closeSheet(){mask.classList.remove('on');sheet.classList.remove('on');}
 mask.onclick=closeSheet;
 function askText(opt){
  const submit=()=>{const el=$('askIn');const v=el?el.value.trim():'';
-  if(!v)return toast('请输入内容');closeSheet();setTimeout(()=>opt.onOk(v),130);};
- openSheet({title:opt.title||'编辑',sub:opt.sub||'',groups:[[
+  if(!v)return toast('璇疯緭鍏ュ唴瀹?);closeSheet();setTimeout(()=>opt.onOk(v),130);};
+ openSheet({title:opt.title||'缂栬緫',sub:opt.sub||'',groups:[[
   {id:'askIn',input:true,value:opt.value||'',placeholder:opt.placeholder||'',run:submit},
-  {id:'askOk',label:'确定',run:submit}]]});
+  {id:'askOk',label:'纭畾',run:submit}]]});
  setTimeout(()=>{const el=$('askIn');if(el)el.focus();},420);}
 
-/* 管理员 */
+/* 绠＄悊鍛?*/
 function applyRole(){
  document.body.classList.toggle('admin',S.admin);
- $('roleBtn').textContent=S.admin?'✓':'⌘';
+ $('roleBtn').textContent=S.admin?'鉁?:'鈱?;
  $('roleBtn').style.background=S.admin?'#5a5f66':'';
  $('roleBtn').style.color=S.admin?'#fff':'';
  renderModGrid();if(view)renderModule(view);
  $('addBlock').style.display=S.admin?'block':'none';}
 $('roleBtn').onclick=()=>{
- if(S.admin)openSheet({title:'管理员模式',sub:'ADMIN · 可编辑全部内容',groups:[
-  [{id:'keep',label:'继续编辑',run:()=>{}}],
-  [{id:'out',label:'退出管理员身份',br:true,run:()=>{S.admin=false;save();applyRole();toast('已退出管理员 · 访客只读');}}]]});
+ if(S.admin)openSheet({title:'绠＄悊鍛樻ā寮?,sub:'ADMIN 路 鍙紪杈戝叏閮ㄥ唴瀹?,groups:[
+  [{id:'keep',label:'缁х画缂栬緫',run:()=>{}}],
+  [{id:'out',label:'閫€鍑虹鐞嗗憳韬唤',br:true,run:()=>{S.admin=false;try{localStorage.setItem(LS,JSON.stringify({admin:false}));}catch(e){}applyRole();toast('宸查€€鍑虹鐞嗗憳 路 璁垮鍙');}}]]});
  else{const doLogin=()=>{const el=$('pwd');const pwd=el?el.value.trim():'';
-   if(!pwd)return toast('请输入密码');
-   if(pwd!==ADMIN_PWD){toast('密码不正确');if(el)el.value='';return;}
-   S.admin=true;save();closeSheet();applyRole();toast('已进入管理员模式');};
-  openSheet({title:'管理员登录',sub:'输入管理员密码以解锁编辑（演示密码 rainy2026）',groups:[
-   [{id:'pwd',input:true,type:'password',placeholder:'管理员密码',run:doLogin}],
-   [{id:'ok',label:'登录',run:doLogin}]]});}};
+   if(!pwd)return toast('璇疯緭鍏ュ瘑鐮?);
+   if(pwd!==ADMIN_PWD){toast('瀵嗙爜涓嶆纭?);if(el)el.value='';return;}
+   S.admin=true;try{localStorage.setItem(LS,JSON.stringify({admin:true}));}catch(e){}closeSheet();applyRole();toast('宸茶繘鍏ョ鐞嗗憳妯″紡');};
+  openSheet({title:'绠＄悊鍛樼櫥褰?,sub:'杈撳叆绠＄悊鍛樺瘑鐮佷互瑙ｉ攣缂栬緫锛堟紨绀哄瘑鐮?rainy2026锛?,groups:[
+   [{id:'pwd',input:true,type:'password',placeholder:'绠＄悊鍛樺瘑鐮?,run:doLogin}],
+   [{id:'ok',label:'鐧诲綍',run:doLogin}]]});}};
 
-/* 兴趣标签 */
+/* 鍏磋叮鏍囩 */
 function renderChips(){
  $('chips').innerHTML=S.chips.map(c=>`<button class="chip ${c===S.chipOn?'on':''}" data-c="${esc(c)}">${esc(c)}</button>`).join('')
-  +(S.admin?'<button class="chip" id="chipAdd">＋</button>':'');
+  +(S.admin?'<button class="chip" id="chipAdd">锛?/button>':'');
  $('chips').querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>{
   const name=b.dataset.c;
   if(S.admin){
-   openSheet({title:'编辑标签',sub:'CHIP · '+name,groups:[
-    [{id:'ren',label:'重命名',run:()=>askText({title:'重命名标签',value:name,onOk:v=>{
+   openSheet({title:'缂栬緫鏍囩',sub:'CHIP 路 '+name,groups:[
+    [{id:'ren',label:'閲嶅懡鍚?,run:()=>askText({title:'閲嶅懡鍚嶆爣绛?,value:name,onOk:v=>{
       const i=S.chips.indexOf(name);if(i>=0)S.chips[i]=v;
-      if(S.chipOn===name)S.chipOn=v;save();renderChips();toast('已更新');}})}],
-    [{id:'del',label:'删除这个标签',br:true,run:()=>{
+      if(S.chipOn===name)S.chipOn=v;save();renderChips();toast('宸叉洿鏂?);}})}],
+    [{id:'del',label:'鍒犻櫎杩欎釜鏍囩',br:true,run:()=>{
       S.chips=S.chips.filter(x=>x!==name);
       if(S.chipOn===name)S.chipOn=S.chips[0]||'';
-      save();renderChips();toast('已删除');}}]]});
+      save();renderChips();toast('宸插垹闄?);}}]]});
    return;}
-  S.chipOn=name;save();renderChips();toast('已切换到「'+name+'」');});
- const add=$('chipAdd');if(add)add.onclick=()=>askText({title:'添加兴趣标签',placeholder:'如：胶片摄影',onOk:v=>{
-  S.chips.push(v);save();renderChips();toast('标签已添加');}});
- $('chipCount').textContent=`文 ${S.mods.length} · 图 ${S.mods.reduce((a,m)=>a+m.images.length,0)}`;}
+  S.chipOn=name;save();renderChips();toast('宸插垏鎹㈠埌銆?+name+'銆?);});
+ const add=$('chipAdd');if(add)add.onclick=()=>askText({title:'娣诲姞鍏磋叮鏍囩',placeholder:'濡傦細鑳剁墖鎽勫奖',onOk:v=>{
+  S.chips.push(v);save();renderChips();toast('鏍囩宸叉坊鍔?);}});
+ $('chipCount').textContent=`鏂?${S.mods.length} 路 鍥?${S.mods.reduce((a,m)=>a+m.images.length,0)}`;}
 
-/* SALLE 今日 */
-const WK=['周日','周一','周二','周三','周四','周五','周六'];
-const CNM=['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'];
+/* SALLE 浠婃棩 */
+const WK=['鍛ㄦ棩','鍛ㄤ竴','鍛ㄤ簩','鍛ㄤ笁','鍛ㄥ洓','鍛ㄤ簲','鍛ㄥ叚'];
+const CNM=['涓€鏈?,'浜屾湀','涓夋湀','鍥涙湀','浜旀湀','鍏湀','涓冩湀','鍏湀','涔濇湀','鍗佹湀','鍗佷竴鏈?,'鍗佷簩鏈?];
 function renderToday(offset=0){
  const d=new Date();d.setDate(d.getDate()-offset);
  $('dnum').textContent=(S.dayNum&&String(S.dayNum).trim())?S.dayNum:d.getDate();
- $('dsub').textContent=(S.daySub&&String(S.daySub).trim())?S.daySub:`${CNM[d.getMonth()]} · ${WK[d.getDay()]}`;
+ $('dsub').textContent=(S.daySub&&String(S.daySub).trim())?S.daySub:`${CNM[d.getMonth()]} 路 ${WK[d.getDay()]}`;
  $('dayQuote').firstChild.textContent=S.dayQuote+' ';
  $('dayQuoteBy').textContent=S.dayQuoteBy;
- $('dayRows').innerHTML=S.dayRows.map(r=>`<div><b>${esc(r[0])}</b> · <em>${esc(r[1])}</em></div>`).join('');
+ $('dayRows').innerHTML=S.dayRows.map(r=>`<div><b>${esc(r[0])}</b> 路 <em>${esc(r[1])}</em></div>`).join('');
  $('dayCount').textContent=S.dayRows.length+2;
  if(S.pols[0])$('pol1').style.backgroundImage=`url("${S.pols[0]}")`;
  if(S.pols[1])$('pol2').style.backgroundImage=`url("${S.pols[1]}")`;}
-function toggleCal(){const b=$('calBox');b.hidden=!b.hidden;$('flipBtn').textContent=b.hidden?'翻开 ›':'收起 ›';if(!b.hidden)renderCal();}
+function toggleCal(){const b=$('calBox');b.hidden=!b.hidden;$('flipBtn').textContent=b.hidden?'缈诲紑 鈥?:'鏀惰捣 鈥?;if(!b.hidden)renderCal();}
 function renderCal(){
  const t=new Date();const days=[];
  for(let i=13;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);days.push(d);}
- $('calRange').textContent=`${String(days[0].getMonth()+1).padStart(2,'0')}.${String(days[0].getDate()).padStart(2,'0')} — ${String(t.getMonth()+1).padStart(2,'0')}.${String(t.getDate()).padStart(2,'0')}`;
+ $('calRange').textContent=`${String(days[0].getMonth()+1).padStart(2,'0')}.${String(days[0].getDate()).padStart(2,'0')} 鈥?${String(t.getMonth()+1).padStart(2,'0')}.${String(t.getDate()).padStart(2,'0')}`;
  $('calGrid').innerHTML=days.map((d,i)=>{
   const isT=i===13;return `<div class="c ${isT?'today':''} ${i%3===0?'has':''}" data-off="${13-i}"><i>${WK[d.getDay()].slice(1)}</i>${d.getDate()}</div>`;}).join('');
  $('calGrid').querySelectorAll('.c').forEach(c=>c.onclick=()=>{renderToday(+c.dataset.off);
-  toast('已查看 '+c.textContent.trim()+' 日');});}
+  toast('宸叉煡鐪?'+c.textContent.trim()+' 鏃?);});}
 $('arrangeBtn').onclick=()=>{
- if(!S.admin)return toast('访客模式 · 仅管理员可编排');
- openSheet({title:'编排今日',sub:"SALLE · aujourd'hui",groups:[
-  [{id:'q',label:'编辑每日一句',run:()=>askText({title:'每日一句',value:S.dayQuote,onOk:v=>{S.dayQuote=v;save();renderToday();toast('已更新');}})},
-   {id:'qb',label:'编辑出处',run:()=>askText({title:'出处',value:S.dayQuoteBy,onOk:v=>{S.dayQuoteBy=v;save();renderToday();toast('已更新');}})},
-   {id:'p1',label:'更换拍立得照片',sub:'两张',run:()=>{pickImage(u=>{S.pols.unshift(u);S.pols=S.pols.slice(0,2);save();renderToday();toast('照片已更新');});}}]]});};
+ if(!S.admin)return toast('璁垮妯″紡 路 浠呯鐞嗗憳鍙紪鎺?);
+ openSheet({title:'缂栨帓浠婃棩',sub:"SALLE 路 aujourd'hui",groups:[
+  [{id:'q',label:'缂栬緫姣忔棩涓€鍙?,run:()=>askText({title:'姣忔棩涓€鍙?,value:S.dayQuote,onOk:v=>{S.dayQuote=v;save();renderToday();toast('宸叉洿鏂?);}})},
+   {id:'qb',label:'缂栬緫鍑哄',run:()=>askText({title:'鍑哄',value:S.dayQuoteBy,onOk:v=>{S.dayQuoteBy=v;save();renderToday();toast('宸叉洿鏂?);}})},
+   {id:'p1',label:'鏇存崲鎷嶇珛寰楃収鐗?,sub:'涓ゅ紶',run:()=>{pickImage(u=>{S.pols.unshift(u);S.pols=S.pols.slice(0,2);save();renderToday();toast('鐓х墖宸叉洿鏂?);});}}]]});};
 
-/* 模块卡 */
+/* 妯″潡鍗?*/
 function renderModGrid(){
  $('modGrid').innerHTML=S.mods.map(m=>{
   const nImg=m.images.length+(m.thumb?1:0);
   return `<div class="card mod-card" data-m="${m.key}">
-   <span class="clip">📎</span>
+   <span class="clip">馃搸</span>
    ${m.thumb?`<div class="thumb" style="background-image:url('${m.thumb}')"></div>`
     :(m.vert?`<div class="vert">${esc(m.vert)}</div>`:'<div style="flex:1"></div>')}
    <div class="mname">${esc(m.cn)}<em class="en-i">${esc(m.en)}</em></div>
-   <div class="msub">${nImg} 件 · ${esc(m.sub)}</div></div>`;}).join('');
+   <div class="msub">${nImg} 浠?路 ${esc(m.sub)}</div></div>`;}).join('');
  $('modGrid').querySelectorAll('.mod-card').forEach(c=>c.onclick=()=>nav(c.dataset.m));}
 
-/* 模块详情 */
+/* 妯″潡璇︽儏 */
 function nav(v){
  if(view===v){closeDetail();return;}
  view=v;
@@ -724,58 +778,58 @@ function renderModule(key){
  const m=S.mods.find(x=>x.key===key);if(!m)return;
  $('modH1').textContent=m.cn;$('modEn').textContent=m.en;
  $('modText').value=m.text;$('modText').readOnly=!S.admin;
- $('modText').placeholder=S.admin?'在这里写下内容…':'访客只读 · 管理员登录后可编辑';
+ $('modText').placeholder=S.admin?'鍦ㄨ繖閲屽啓涓嬪唴瀹光€?:'璁垮鍙 路 绠＄悊鍛樼櫥褰曞悗鍙紪杈?;
  $('gal').innerHTML=m.images.map(u=>`<div class="it"><img src="${u}" alt=""></div>`).join('')
-  +(S.admin?'<button class="addb" data-galadd="1">＋</button>':'');
+  +(S.admin?'<button class="addb" data-galadd="1">锛?/button>':'');
  const ab=$('gal').querySelector('[data-galadd]');
- if(ab)ab.onclick=()=>pickImage(u=>{m.images.push(u);save();renderModule(key);renderModGrid();renderChips();toast('图片已插入');});
+ if(ab)ab.onclick=()=>pickImage(u=>{m.images.push(u);save();renderModule(key);renderModGrid();renderChips();toast('鍥剧墖宸叉彃鍏?);});
  $('modBar').innerHTML=S.admin
-  ?'<button class="mini" data-act="lk">＋ 链接</button><button class="mini" data-act="thumb">换封面</button><button class="mini" data-act="vert">竖排句</button><button class="mini" data-act="reset">恢复默认</button><button class="mini" data-act="close">收起</button>'
-  :'<button class="mini" data-act="close">收起</button>';
+  ?'<button class="mini" data-act="lk">锛?閾炬帴</button><button class="mini" data-act="thumb">鎹㈠皝闈?/button><button class="mini" data-act="vert">绔栨帓鍙?/button><button class="mini" data-act="reset">鎭㈠榛樿</button><button class="mini" data-act="close">鏀惰捣</button>'
+  :'<button class="mini" data-act="close">鏀惰捣</button>';
  $('modBar').querySelectorAll('.mini').forEach(b=>b.onclick=()=>{
   const a=b.dataset.act;
   if(a==='close')closeDetail();
-  else if(a==='lk')askText({title:'添加链接',value:'https://',onOk:v=>{m.links.push({t:v,u:v});save();toast('链接已添加');}});
-  else if(a==='thumb')pickImage(u=>{m.thumb=u;save();renderModule(key);renderModGrid();toast('封面已更新');});
-  else if(a==='vert')askText({title:'竖排句',value:m.vert||'',onOk:v=>{m.vert=v;save();renderModGrid();toast('已更新');}});
-  else if(a==='reset'){const d=DEF.mods.find(x=>x.key===key);if(d){m.text=d.text;renderModule(key);save();toast('已恢复默认文字');}}});
+  else if(a==='lk')askText({title:'娣诲姞閾炬帴',value:'https://',onOk:v=>{m.links.push({t:v,u:v});save();toast('閾炬帴宸叉坊鍔?);}});
+  else if(a==='thumb')pickImage(u=>{m.thumb=u;save();renderModule(key);renderModGrid();toast('灏侀潰宸叉洿鏂?);});
+  else if(a==='vert')askText({title:'绔栨帓鍙?,value:m.vert||'',onOk:v=>{m.vert=v;save();renderModGrid();toast('宸叉洿鏂?);}});
+  else if(a==='reset'){const d=DEF.mods.find(x=>x.key===key);if(d){m.text=d.text;renderModule(key);save();toast('宸叉仮澶嶉粯璁ゆ枃瀛?);}}});
  renderBlocks(key);}
 $('modText').oninput=()=>{if(!S.admin)return;cur().text=$('modText').value;save();};
 function renderBlocks(key){
  const arr=S.blocks[key]||(S.blocks[key]=[]);
  $('cols').innerHTML=arr.map((b,i)=>`
   <div class="card col">
-   <div class="bimg" data-bi="${i}">${b.image?`<img src="${b.image}" alt="">`:`<span class="ph">${S.admin?'＋ 上传图片':'暂无图片'}</span>`}</div>
+   <div class="bimg" data-bi="${i}">${b.image?`<img src="${b.image}" alt="">`:`<span class="ph">${S.admin?'锛?涓婁紶鍥剧墖':'鏆傛棤鍥剧墖'}</span>`}</div>
    <div class="btxt">
-    <textarea data-bt="${i}" placeholder="${S.admin?'输入文字…':'访客只读'}" ${S.admin?'':'readonly'}>${esc(b.text||'')}</textarea>
+    <textarea data-bt="${i}" placeholder="${S.admin?'杈撳叆鏂囧瓧鈥?:'璁垮鍙'}" ${S.admin?'':'readonly'}>${esc(b.text||'')}</textarea>
     ${S.admin?`<div class="colbar">
-     <button class="mini" data-up="${i}">↑</button>
-     <button class="mini" data-dn="${i}">↓</button>
-     <button class="mini" data-rm="${i}">删除</button></div>`:''}
-   </div></div>`).join('')||'<div class="lbl" style="padding:12px 4px">暂无分栏</div>';
- $('cols').querySelectorAll('.bimg').forEach(el=>el.onclick=()=>{if(!S.admin)return toast('访客模式');
-  pickImage(u=>{arr[+el.dataset.bi].image=u;save();renderBlocks(key);toast('图片已更新');});});
+     <button class="mini" data-up="${i}">鈫?/button>
+     <button class="mini" data-dn="${i}">鈫?/button>
+     <button class="mini" data-rm="${i}">鍒犻櫎</button></div>`:''}
+   </div></div>`).join('')||'<div class="lbl" style="padding:12px 4px">鏆傛棤鍒嗘爮</div>';
+ $('cols').querySelectorAll('.bimg').forEach(el=>el.onclick=()=>{if(!S.admin)return toast('璁垮妯″紡');
+  pickImage(u=>{arr[+el.dataset.bi].image=u;save();renderBlocks(key);toast('鍥剧墖宸叉洿鏂?);});});
  $('cols').querySelectorAll('textarea').forEach(ta=>ta.oninput=()=>{if(!S.admin)return;arr[+ta.dataset.bt].text=ta.value;save();});
  $('cols').querySelectorAll('[data-up]').forEach(b=>b.onclick=()=>{const i=+b.dataset.up;if(i<=0)return;
   const t=arr.splice(i,1)[0];arr.splice(i-1,0,t);save();renderBlocks(key);});
  $('cols').querySelectorAll('[data-dn]').forEach(b=>b.onclick=()=>{const i=+b.dataset.dn;if(i>=arr.length-1)return;
   const t=arr.splice(i,1)[0];arr.splice(i+1,0,t);save();renderBlocks(key);});
- $('cols').querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{arr.splice(+b.dataset.rm,1);save();renderBlocks(key);toast('分栏已删除');});}
-$('addBlock').onclick=()=>{if(!S.admin)return toast('访客模式 · 仅管理员可添加');
- if(!view)return toast('先打开一个模块');
- (S.blocks[view]=S.blocks[view]||[]).push({image:'',text:''});save();renderBlocks(view);toast('已添加分栏');};
+ $('cols').querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{arr.splice(+b.dataset.rm,1);save();renderBlocks(key);toast('鍒嗘爮宸插垹闄?);});}
+$('addBlock').onclick=()=>{if(!S.admin)return toast('璁垮妯″紡 路 浠呯鐞嗗憳鍙坊鍔?);
+ if(!view)return toast('鍏堟墦寮€涓€涓ā鍧?);
+ (S.blocks[view]=S.blocks[view]||[]).push({image:'',text:''});save();renderBlocks(view);toast('宸叉坊鍔犲垎鏍?);};
 let imgCb=null;
 function pickImage(cb){imgCb=cb;$('fileImg').click();}
 $('fileImg').onchange=e=>{const f=e.target.files[0];e.target.value='';if(!f||!imgCb)return;
  const r=new FileReader();r.onload=()=>{imgCb(r.result);imgCb=null;};r.readAsDataURL(f);};
 
-/* 天气 */
+/* 澶╂皵 */
 const WDATA={
- sun:['☀','21°','Tokyo · 晴','21°C','45%','1.4 m/s','晴朗','“在有光的地方，慢慢走。”'],
- cloud:['☁','16°','Tokyo · 多云','16°C','68%','3.2 m/s','多云','“云走得很慢，像我一样。”'],
- rain:['☂','14°','Tokyo · 雨','14°C','86%','4.8 m/s','降雨','“雨落有声，心事无声。”'],
- snow:['❄','2°','Tokyo · 飘雪','2°C','72%','2.1 m/s','降雪','“雪落下来，世界就安静了。”'],
- mist:['〰','11°','Tokyo · 薄雾','11°C','91%','1.0 m/s','薄雾','“雾散之后，见光。”']};
+ sun:['鈽€','21掳','Tokyo 路 鏅?,'21掳C','45%','1.4 m/s','鏅存湕','鈥滃湪鏈夊厜鐨勫湴鏂癸紝鎱㈡參璧般€傗€?],
+ cloud:['鈽?,'16掳','Tokyo 路 澶氫簯','16掳C','68%','3.2 m/s','澶氫簯','鈥滀簯璧板緱寰堟參锛屽儚鎴戜竴鏍枫€傗€?],
+ rain:['鈽?,'14掳','Tokyo 路 闆?,'14掳C','86%','4.8 m/s','闄嶉洦','鈥滈洦钀芥湁澹帮紝蹇冧簨鏃犲０銆傗€?],
+ snow:['鉂?,'2掳','Tokyo 路 椋橀洩','2掳C','72%','2.1 m/s','闄嶉洩','鈥滈洩钀戒笅鏉ワ紝涓栫晫灏卞畨闈欎簡銆傗€?],
+ mist:['銆?,'11掳','Tokyo 路 钖勯浘','11掳C','91%','1.0 m/s','钖勯浘','鈥滈浘鏁ｄ箣鍚庯紝瑙佸厜銆傗€?]};
 function setWeather(type,silent){
  const x=WDATA[type]||WDATA.cloud;
  $('rainFx').style.opacity=type==='rain'?'0.5':'0';
@@ -786,18 +840,18 @@ function setWeather(type,silent){
  $('wQuote').textContent=x[7];
  document.querySelectorAll('#wOpts button').forEach(b=>b.classList.toggle('on',b.dataset.w===type));
  S.weather=type;save();
- if(!silent)toast('已切换为 '+x[2].split('·')[1]+' 氛围');}
+ if(!silent)toast('宸插垏鎹负 '+x[2].split('路')[1]+' 姘涘洿');}
 document.querySelectorAll('#wOpts button').forEach(b=>b.onclick=()=>setWeather(b.dataset.w));
 
-/* 音乐（主页插块 · 层叠封面 + 白胶唱片） */
-const LYRICS=['就像是妳的宇宙 小小星球 填满自由','一直就走到以后 你的温柔 尝到甜头','想要在楼下等你 对你说声 Hello'];
+/* 闊充箰锛堜富椤垫彃鍧?路 灞傚彔灏侀潰 + 鐧借兌鍞辩墖锛?*/
+const LYRICS=['灏卞儚鏄Τ鐨勫畤瀹?灏忓皬鏄熺悆 濉弧鑷敱','涓€鐩村氨璧板埌浠ュ悗 浣犵殑娓╂煍 灏濆埌鐢滃ご','鎯宠鍦ㄦゼ涓嬬瓑浣?瀵逛綘璇村０ Hello'];
 let trackList=[
- {name:'楼下等你',artist:'Young 7',url:null},
- {name:'小小星球',artist:'Rainy Season',url:null},
- {name:'Hello · 雨天',artist:'Demo',url:null},
+ {name:'妤间笅绛変綘',artist:'Young 7',url:null},
+ {name:'灏忓皬鏄熺悆',artist:'Rainy Season',url:null},
+ {name:'Hello 路 闆ㄥぉ',artist:'Demo',url:null},
  {name:'Milky Way',artist:'Jason Kurth',url:null},
- {name:'雾散见光',artist:'ToLight',url:null}],trackIndex=0,liked=false;
-const NOTES=['♪','♫','♩','♬','𝄞'];
+ {name:'闆炬暎瑙佸厜',artist:'ToLight',url:null}],trackIndex=0,liked=false;
+const NOTES=['鈾?,'鈾?,'鈾?,'鈾?,'饾劄'];
 function discHTML(i){
  const cov=(S.cfCovers||[])[i]||'';
  let notes='';for(let k=0;k<8;k++){const a=k*45+Math.random()*20;
@@ -816,61 +870,61 @@ function renderCF(){
  $('cf').querySelectorAll('.cf-card').forEach(c=>c.onclick=()=>{
   const o=+c.dataset.off;
   if(o!==0){loadTrack(trackIndex+o);return;}
-  if(S.admin){openSheet({title:'唱片封面',sub:'CENTER DISC',groups:[
-   [{id:'cov',label:'更换唱片照片',run:()=>pickImage(u=>{(S.cfCovers=S.cfCovers||[])[trackIndex]=u;save();renderCF();toast('唱片照片已更换');})},
-    {id:'clr',label:'恢复纯白唱片',br:true,run:()=>{(S.cfCovers=S.cfCovers||[])[trackIndex]='';save();renderCF();toast('已恢复默认');}}]]});}
+  if(S.admin){openSheet({title:'鍞辩墖灏侀潰',sub:'CENTER DISC',groups:[
+   [{id:'cov',label:'鏇存崲鍞辩墖鐓х墖',run:()=>pickImage(u=>{(S.cfCovers=S.cfCovers||[])[trackIndex]=u;save();renderCF();toast('鍞辩墖鐓х墖宸叉洿鎹?);})},
+    {id:'clr',label:'鎭㈠绾櫧鍞辩墖',br:true,run:()=>{(S.cfCovers=S.cfCovers||[])[trackIndex]='';save();renderCF();toast('宸叉仮澶嶉粯璁?);}}]]});}
   else togglePlay();});
  syncNP();}
 function syncNP(){
  const t=trackList[trackIndex];
  $('cfName').textContent=t.name;$('cfArtist').textContent=t.artist;
  $('cfLyr').innerHTML=`${LYRICS[0]}<br><b>${LYRICS[1]}</b><br>${LYRICS[2]}`;
- $('mbCount').textContent=trackList.length+' 首';
+ $('mbCount').textContent=trackList.length+' 棣?;
  const disc=$('cf').querySelector('[data-disc]');
  if(disc)disc.closest('.cf-card').querySelectorAll('.disc').forEach(d=>d.classList.remove('spin'));
  const cd=$('cf').querySelector('.cf-card.center .disc');
- if(cd)cd.classList.toggle('spin',$('cfPlay').textContent==='Ⅱ');}
+ if(cd)cd.classList.toggle('spin',$('cfPlay').textContent==='鈪?);}
 function togglePlay(){const a=$('audio');
- if(!a.src){toast('请先上传本地 MP3');$('mp3Input').click();return;}
- if(a.paused){a.play().then(()=>{$('cfPlay').textContent='Ⅱ';$('playBtn').textContent='Ⅱ';syncNP();}).catch(()=>toast('无法播放此音频'));}
- else{a.pause();$('cfPlay').textContent='▶';$('playBtn').textContent='▶';syncNP();}}
+ if(!a.src){toast('璇峰厛涓婁紶鏈湴 MP3');$('mp3Input').click();return;}
+ if(a.paused){a.play().then(()=>{$('cfPlay').textContent='鈪?;$('playBtn').textContent='鈪?;syncNP();}).catch(()=>toast('鏃犳硶鎾斁姝ら煶棰?));}
+ else{a.pause();$('cfPlay').textContent='鈻?;$('playBtn').textContent='鈻?;syncNP();}}
 $('mp3Input').onchange=e=>{const files=[...e.target.files];e.target.value='';if(!files.length)return;
- files.forEach(f=>trackList.push({name:f.name.replace(/\.[^.]+$/,''),artist:'本地音乐',url:URL.createObjectURL(f),file:f}));
- loadTrack(trackList.length-files.length);toast('已载入 '+files.length+' 首音频');};
+ files.forEach(f=>trackList.push({name:f.name.replace(/\.[^.]+$/,''),artist:'鏈湴闊充箰',url:URL.createObjectURL(f),file:f}));
+ loadTrack(trackList.length-files.length);toast('宸茶浇鍏?'+files.length+' 棣栭煶棰?);};
 function loadTrack(i){if(!trackList.length)return;
  trackIndex=(i+trackList.length)%trackList.length;
  const t=trackList[trackIndex];
  if(t.url)$('audio').src=t.url;
- $('trackName').textContent=t.name;$('trackArtist').textContent=t.artist+' · Rainy Season';
- $('cfPlay').textContent='▶';$('playBtn').textContent='▶';
+ $('trackName').textContent=t.name;$('trackArtist').textContent=t.artist+' 路 Rainy Season';
+ $('cfPlay').textContent='鈻?;$('playBtn').textContent='鈻?;
  renderCF();
- if(t.url){$('audio').load();$('audio').play().then(()=>{$('cfPlay').textContent='Ⅱ';$('playBtn').textContent='Ⅱ';syncNP();}).catch(()=>{});}}
+ if(t.url){$('audio').load();$('audio').play().then(()=>{$('cfPlay').textContent='鈪?;$('playBtn').textContent='鈪?;syncNP();}).catch(()=>{});}}
 function prevTrack(){loadTrack(trackIndex-1);}
 function nextTrack(){loadTrack(trackIndex+1);}
-function toggleHeart(){liked=!liked;$('cfHeart').classList.toggle('on',liked);$('cfHeart').textContent=liked?'♥':'♡';
- toast(liked?'已收藏这首歌':'已取消收藏');}
+function toggleHeart(){liked=!liked;$('cfHeart').classList.toggle('on',liked);$('cfHeart').textContent=liked?'鈾?:'鈾?;
+ toast(liked?'宸叉敹钘忚繖棣栨瓕':'宸插彇娑堟敹钘?);}
 function openPlaylist(){
- openSheet({title:'歌单',sub:'PLAYLIST · '+trackList.length+' 首',groups:[
-  trackList.map((t,i)=>({id:'t'+i,label:t.name,sub:t.artist+(i===trackIndex?' · 播放中':''),run:()=>loadTrack(i)})),
-  [{id:'up2',label:'＋ 上传 MP3',run:()=>$('mp3Input').click()}]]});}
+ openSheet({title:'姝屽崟',sub:'PLAYLIST 路 '+trackList.length+' 棣?,groups:[
+  trackList.map((t,i)=>({id:'t'+i,label:t.name,sub:t.artist+(i===trackIndex?' 路 鎾斁涓?:''),run:()=>loadTrack(i)})),
+  [{id:'up2',label:'锛?涓婁紶 MP3',run:()=>$('mp3Input').click()}]]});}
 $('cfProg').onclick=e=>{const a=$('audio');if(!a.duration)return;
  const r=$('cfProg').getBoundingClientRect();a.currentTime=a.duration*(e.clientX-r.left)/r.width;};
 $('audio').addEventListener('timeupdate',()=>{const a=$('audio');const p=a.duration?a.currentTime/a.duration*100:0;
  $('cfFill').style.width=p+'%';$('progressFill').style.width=p+'%';});
 $('audio').addEventListener('ended',nextTrack);
-$('audio').addEventListener('pause',()=>{$('cfPlay').textContent='▶';$('playBtn').textContent='▶';syncNP();});
-$('audio').addEventListener('play',()=>{$('cfPlay').textContent='Ⅱ';$('playBtn').textContent='Ⅱ';syncNP();});
+$('audio').addEventListener('pause',()=>{$('cfPlay').textContent='鈻?;$('playBtn').textContent='鈻?;syncNP();});
+$('audio').addEventListener('play',()=>{$('cfPlay').textContent='鈪?;$('playBtn').textContent='鈪?;syncNP();});
 
-/* 聊天 */
+/* 鑱婂ぉ */
 function addBubble(text,me=false){const b=document.createElement('div');
  b.className='bubble'+(me?' me':'');b.textContent=text;
  $('chatLog').append(b);$('chatLog').scrollTop=$('chatLog').scrollHeight;}
 const REPLIES={
- profile:'这里是拾光 × 雨季，一个收集灵感、图片和生活片段的小小空间。',
- schedule:'排单表在下方「排单表」卡片里，点击即可查看当前安排与状态。',
- music:'听歌栏已经为你准备好了，可以上传本地音乐播放。',
- weather:'你可以选择晴、多云、雨、雪或薄雾，页面会切换对应的视觉氛围。',
- message:'当然可以，在下面写下你想说的话吧。'};
+ profile:'杩欓噷鏄嬀鍏?脳 闆ㄥ锛屼竴涓敹闆嗙伒鎰熴€佸浘鐗囧拰鐢熸椿鐗囨鐨勫皬灏忕┖闂淬€?,
+ schedule:'鎺掑崟琛ㄥ湪涓嬫柟銆屾帓鍗曡〃銆嶅崱鐗囬噷锛岀偣鍑诲嵆鍙煡鐪嬪綋鍓嶅畨鎺掍笌鐘舵€併€?,
+ music:'鍚瓕鏍忓凡缁忎负浣犲噯澶囧ソ浜嗭紝鍙互涓婁紶鏈湴闊充箰鎾斁銆?,
+ weather:'浣犲彲浠ラ€夋嫨鏅淬€佸浜戙€侀洦銆侀洩鎴栬杽闆撅紝椤甸潰浼氬垏鎹㈠搴旂殑瑙嗚姘涘洿銆?,
+ message:'褰撶劧鍙互锛屽湪涓嬮潰鍐欎笅浣犳兂璇寸殑璇濆惂銆?};
 document.querySelectorAll('#chatChoices .chip').forEach(b=>b.onclick=()=>{
  const k=b.dataset.c;addBubble(b.textContent,true);addBubble(REPLIES[k]);
  if(k==='schedule')setTimeout(()=>nav('schedule'),600);
@@ -878,115 +932,115 @@ document.querySelectorAll('#chatChoices .chip').forEach(b=>b.onclick=()=>{
  if(k==='music')$('paneMusic').scrollIntoView({behavior:'smooth'});
  if(k==='message')$('messageBox').hidden=false;});
 function sendMessage(){const t=$('visitorMessage').value.trim();
- if(!t)return toast('先写点什么吧');
- addBubble(t,true);addBubble('谢谢你的留言。留言仅在当前演示页面展示。');
+ if(!t)return toast('鍏堝啓鐐逛粈涔堝惂');
+ addBubble(t,true);addBubble('璋㈣阿浣犵殑鐣欒█銆傜暀瑷€浠呭湪褰撳墠婕旂ず椤甸潰灞曠ず銆?);
  $('visitorMessage').value='';$('messageBox').hidden=true;}
 
-/* 天气/音乐/聊天入口（从顶部小图标外，加在 archive 行点击） */
+/* 澶╂皵/闊充箰/鑱婂ぉ鍏ュ彛锛堜粠椤堕儴灏忓浘鏍囧锛屽姞鍦?archive 琛岀偣鍑伙級 */
 document.querySelector('.archive').style.cursor='pointer';
 document.querySelector('.archive').onclick=()=>{
- openSheet({title:'更多',sub:'MORE · les extras',groups:[
-  [{id:'w',label:'天气氛围',sub:WDATA[S.weather][2],run:()=>$('paneWeather').scrollIntoView({behavior:'smooth'})},
-   {id:'m',label:'听歌栏',run:()=>$('paneMusic').scrollIntoView({behavior:'smooth'})},
-   {id:'c',label:'雨季信箱',run:()=>$('paneChat').scrollIntoView({behavior:'smooth'})},
-   {id:'sms',label:'私聊界面',sub:'Text Message · 自动回复',run:openSms}]]});};
+ openSheet({title:'鏇村',sub:'MORE 路 les extras',groups:[
+  [{id:'w',label:'澶╂皵姘涘洿',sub:WDATA[S.weather][2],run:()=>$('paneWeather').scrollIntoView({behavior:'smooth'})},
+   {id:'m',label:'鍚瓕鏍?,run:()=>$('paneMusic').scrollIntoView({behavior:'smooth'})},
+   {id:'c',label:'闆ㄥ淇＄',run:()=>$('paneChat').scrollIntoView({behavior:'smooth'})},
+   {id:'sms',label:'绉佽亰鐣岄潰',sub:'Text Message 路 鑷姩鍥炲',run:openSms}]]});};
 
-/* 拍立得对话页 */
+/* 鎷嶇珛寰楀璇濋〉 */
 const DLG_DEF={bg:'https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1400&q=80',
- msgs:['我是在初春见到你的','我想把我的歌单分享给你'],
- name:'陈阿肆',nameEn:'name.chenasi',
- quote:'春天过去，夏天来的时候。会下很大的雨，听歌都会有伴奏。\n小雨开窗空气很好，会很想你。'};
+ msgs:['鎴戞槸鍦ㄥ垵鏄ヨ鍒颁綘鐨?,'鎴戞兂鎶婃垜鐨勬瓕鍗曞垎浜粰浣?],
+ name:'闄堥樋鑲?,nameEn:'name.chenasi',
+ quote:'鏄ュぉ杩囧幓锛屽澶╂潵鐨勬椂鍊欍€備細涓嬪緢澶х殑闆紝鍚瓕閮戒細鏈変即濂忋€俓n灏忛洦寮€绐楃┖姘斿緢濂斤紝浼氬緢鎯充綘銆?};
 function dlgData(){if(!S.dialogue)S.dialogue=JSON.parse(JSON.stringify(DLG_DEF));return S.dialogue;}
 function renderDlg(){
  const d=dlgData();
  $('dlgBg').style.backgroundImage=`url("${d.bg}")`;
  $('dlgBars').innerHTML=d.msgs.map((m,i)=>
   `<div class="dbar" data-i="${i}">${esc(m)}<span class="dot"></span></div>`).join('')
-  +(S.admin?'<button class="dlg-add2" id="dlgAdd2" style="position:static">＋ 添加一条</button>':'');
+  +(S.admin?'<button class="dlg-add2" id="dlgAdd2" style="position:static">锛?娣诲姞涓€鏉?/button>':'');
  $('dlgName').innerHTML=esc(d.name)+`<small>${esc(d.nameEn)}</small>`;
  $('dlgQuote').innerHTML=esc(d.quote).replace(/\n/g,'<br>');
- /* 直接编辑：点对话条 */
+ /* 鐩存帴缂栬緫锛氱偣瀵硅瘽鏉?*/
  $('dlgBars').querySelectorAll('.dbar').forEach(b=>b.onclick=()=>{
   if(!S.admin)return;
   const i=+b.dataset.i;
-  openSheet({title:'编辑对话',sub:'#'+(i+1),groups:[
-   [{id:'ed',label:'修改内容',run:()=>askText({title:'编辑这条对话',value:d.msgs[i],onOk:v=>{d.msgs[i]=v;save();renderDlg();toast('已更新');}})}],
-   [{id:'del',label:'删除这条',br:true,run:()=>{d.msgs.splice(i,1);save();renderDlg();toast('已删除');}}]]});});
+  openSheet({title:'缂栬緫瀵硅瘽',sub:'#'+(i+1),groups:[
+   [{id:'ed',label:'淇敼鍐呭',run:()=>askText({title:'缂栬緫杩欐潯瀵硅瘽',value:d.msgs[i],onOk:v=>{d.msgs[i]=v;save();renderDlg();toast('宸叉洿鏂?);}})}],
+   [{id:'del',label:'鍒犻櫎杩欐潯',br:true,run:()=>{d.msgs.splice(i,1);save();renderDlg();toast('宸插垹闄?);}}]]});});
  const add=$('dlgAdd2');
- if(add)add.onclick=()=>askText({title:'添加一条对话',placeholder:'写一句话……',onOk:v=>{d.msgs.push(v);save();renderDlg();toast('已添加');}});}
+ if(add)add.onclick=()=>askText({title:'娣诲姞涓€鏉″璇?,placeholder:'鍐欎竴鍙ヨ瘽鈥︹€?,onOk:v=>{d.msgs.push(v);save();renderDlg();toast('宸叉坊鍔?);}});}
 function openDlg(){renderDlg();$('dlg').classList.add('on');document.body.style.overflow='hidden';}
 function closeDlg(){$('dlg').classList.remove('on');document.body.style.overflow='';}
 $('pol1').parentElement.style.cursor='pointer';
 $('pol1').onclick=openDlg;$('pol2').onclick=openDlg;
 $('dlgGear').onclick=()=>{
- if(!S.admin)return toast('访客模式 · 仅管理员可编辑');
+ if(!S.admin)return toast('璁垮妯″紡 路 浠呯鐞嗗憳鍙紪杈?);
  const d=dlgData();
- openSheet({title:'对话页设置',sub:'DIALOGUE · 集中编辑这一页的全部内容',groups:[
-  d.msgs.map((m,i)=>({id:'me'+i,label:(i+1)+'. '+(m.length>14?m.slice(0,14)+'…':m),sub:'点按编辑',run:()=>openSheet({title:'编辑对话',sub:'#'+(i+1),groups:[
-   [{id:'ed',label:'修改内容',run:()=>askText({title:'编辑这条对话',value:m,onOk:v=>{d.msgs[i]=v;save();renderDlg();toast('已更新');}})}],
-   [{id:'del',label:'删除这条',br:true,run:()=>{d.msgs.splice(i,1);save();renderDlg();toast('已删除');}}]]})})),
-  [{id:'add',label:'＋ 添加一条对话',run:()=>askText({title:'添加一条对话',placeholder:'写一句话……',onOk:v=>{d.msgs.push(v);save();renderDlg();toast('已添加');}})}],
-  [{id:'bg',label:'更换背景照片',run:()=>pickImage(u=>{d.bg=u;save();renderDlg();toast('背景已更换');})},
-   {id:'bgR',label:'恢复默认背景',run:()=>{d.bg=DLG_DEF.bg;save();renderDlg();toast('已恢复默认');}}],
-  [{id:'nm',label:'编辑署名',sub:d.name,run:()=>askText({title:'署名',value:d.name,onOk:v=>{d.name=v;save();renderDlg();}})},
-   {id:'ne',label:'编辑英文名',sub:d.nameEn,run:()=>askText({title:'英文名',value:d.nameEn,onOk:v=>{d.nameEn=v;save();renderDlg();}})},
-   {id:'qt',label:'编辑底部段落',run:()=>askText({title:'底部段落',value:d.quote,onOk:v=>{d.quote=v;save();renderDlg();}})}]]});};
+ openSheet({title:'瀵硅瘽椤佃缃?,sub:'DIALOGUE 路 闆嗕腑缂栬緫杩欎竴椤电殑鍏ㄩ儴鍐呭',groups:[
+  d.msgs.map((m,i)=>({id:'me'+i,label:(i+1)+'. '+(m.length>14?m.slice(0,14)+'鈥?:m),sub:'鐐规寜缂栬緫',run:()=>openSheet({title:'缂栬緫瀵硅瘽',sub:'#'+(i+1),groups:[
+   [{id:'ed',label:'淇敼鍐呭',run:()=>askText({title:'缂栬緫杩欐潯瀵硅瘽',value:m,onOk:v=>{d.msgs[i]=v;save();renderDlg();toast('宸叉洿鏂?);}})}],
+   [{id:'del',label:'鍒犻櫎杩欐潯',br:true,run:()=>{d.msgs.splice(i,1);save();renderDlg();toast('宸插垹闄?);}}]]})})),
+  [{id:'add',label:'锛?娣诲姞涓€鏉″璇?,run:()=>askText({title:'娣诲姞涓€鏉″璇?,placeholder:'鍐欎竴鍙ヨ瘽鈥︹€?,onOk:v=>{d.msgs.push(v);save();renderDlg();toast('宸叉坊鍔?);}})}],
+  [{id:'bg',label:'鏇存崲鑳屾櫙鐓х墖',run:()=>pickImage(u=>{d.bg=u;save();renderDlg();toast('鑳屾櫙宸叉洿鎹?);})},
+   {id:'bgR',label:'鎭㈠榛樿鑳屾櫙',run:()=>{d.bg=DLG_DEF.bg;save();renderDlg();toast('宸叉仮澶嶉粯璁?);}}],
+  [{id:'nm',label:'缂栬緫缃插悕',sub:d.name,run:()=>askText({title:'缃插悕',value:d.name,onOk:v=>{d.name=v;save();renderDlg();}})},
+   {id:'ne',label:'缂栬緫鑻辨枃鍚?,sub:d.nameEn,run:()=>askText({title:'鑻辨枃鍚?,value:d.nameEn,onOk:v=>{d.nameEn=v;save();renderDlg();}})},
+   {id:'qt',label:'缂栬緫搴曢儴娈佃惤',run:()=>askText({title:'搴曢儴娈佃惤',value:d.quote,onOk:v=>{d.quote=v;save();renderDlg();}})}]]});};
 
-/* 直接编辑：署名 / 英文名 / 段落 / 背景 */
+/* 鐩存帴缂栬緫锛氱讲鍚?/ 鑻辨枃鍚?/ 娈佃惤 / 鑳屾櫙 */
 $('dlgNameEdit').onclick=e=>{e.stopPropagation();if(!S.admin)return;const d=dlgData();
- askText({title:'编辑署名',value:d.name,onOk:v=>{d.name=v;save();renderDlg();toast('署名已更新');}});};
+ askText({title:'缂栬緫缃插悕',value:d.name,onOk:v=>{d.name=v;save();renderDlg();toast('缃插悕宸叉洿鏂?);}});};
 $('dlgQuoteEdit').onclick=e=>{e.stopPropagation();if(!S.admin)return;const d=dlgData();
- askText({title:'编辑底部段落',value:d.quote,onOk:v=>{d.quote=v;save();renderDlg();toast('段落已更新');}});};
+ askText({title:'缂栬緫搴曢儴娈佃惤',value:d.quote,onOk:v=>{d.quote=v;save();renderDlg();toast('娈佃惤宸叉洿鏂?);}});};
 $('dlgName').onclick=()=>{if(!S.admin)return;$('dlgNameEdit').click();};
 $('dlgQuote').onclick=()=>{if(!S.admin)return;const d=dlgData();
- askText({title:'编辑底部段落',value:d.quote,onOk:v=>{d.quote=v;save();renderDlg();toast('段落已更新');}});};
+ askText({title:'缂栬緫搴曢儴娈佃惤',value:d.quote,onOk:v=>{d.quote=v;save();renderDlg();toast('娈佃惤宸叉洿鏂?);}});};
 $('dlgBg').onclick=()=>{if(!S.admin)return;const d=dlgData();
- pickImage(u=>{d.bg=u;save();renderDlg();toast('背景已更换');});};
+ pickImage(u=>{d.bg=u;save();renderDlg();toast('鑳屾櫙宸叉洿鎹?);});};
 
-/* 大日期可编辑（管理员） */
+/* 澶ф棩鏈熷彲缂栬緫锛堢鐞嗗憳锛?*/
 function editDayNum(){
- if(!S.admin)return toast('访客模式 · 仅管理员可编辑');
+ if(!S.admin)return toast('璁垮妯″紡 路 浠呯鐞嗗憳鍙紪杈?);
  const submit=()=>{const a=$('dnA')?$('dnA').value.trim():'',b=$('dnB')?$('dnB').value.trim():'';
   closeSheet();setTimeout(()=>{
-   S.dayNum=a;S.daySub=b;save();renderToday();toast('日期已更新'+(a?'':'（恢复自动显示当天）'));},130);};
- openSheet({title:'编辑日期',sub:"aujourd'hui · 留空则自动显示当天",groups:[[
-  {id:'dnA',input:true,value:S.dayNum||'',placeholder:'大数字，如 17',run:submit},
-  {id:'dnB',input:true,value:S.daySub||'',placeholder:'小字，如 十月 · 周六',run:submit},
-  {id:'ok',label:'保存',run:submit}],
-  [{id:'auto',label:'恢复自动（当天日期）',br:true,run:()=>{S.dayNum='';S.daySub='';save();renderToday();toast('已恢复自动日期');}}]]});
+   S.dayNum=a;S.daySub=b;save();renderToday();toast('鏃ユ湡宸叉洿鏂?+(a?'':'锛堟仮澶嶈嚜鍔ㄦ樉绀哄綋澶╋級'));},130);};
+ openSheet({title:'缂栬緫鏃ユ湡',sub:"aujourd'hui 路 鐣欑┖鍒欒嚜鍔ㄦ樉绀哄綋澶?,groups:[[
+  {id:'dnA',input:true,value:S.dayNum||'',placeholder:'澶ф暟瀛楋紝濡?17',run:submit},
+  {id:'dnB',input:true,value:S.daySub||'',placeholder:'灏忓瓧锛屽 鍗佹湀 路 鍛ㄥ叚',run:submit},
+  {id:'ok',label:'淇濆瓨',run:submit}],
+  [{id:'auto',label:'鎭㈠鑷姩锛堝綋澶╂棩鏈燂級',br:true,run:()=>{S.dayNum='';S.daySub='';save();renderToday();toast('宸叉仮澶嶈嚜鍔ㄦ棩鏈?);}}]]});
  setTimeout(()=>{const el=$('dnA');if(el)el.focus();},420);}
 $('dnum').style.cursor='pointer';
 $('dnum').onclick=editDayNum;
 $('dsub').onclick=editDayNum;
 
-/* 私聊界面 */
+/* 绉佽亰鐣岄潰 */
 const SMS_DEF={num:'2969',name:'1',avatar:'',
- msgs:[{s:'them',k:'text',t:'那年秋天回不去了 就这样吧'},
-       {s:'me',k:'text',t:'好吧 不后悔吗？',read:true}],
- rules:[{k:'在吗',r:'我在呢，随时都在'},{k:'想你',r:'我也是。小雨开窗的时候，最想你了'}],
- defReply:'收到啦，等会儿回你。'};
+ msgs:[{s:'them',k:'text',t:'閭ｅ勾绉嬪ぉ鍥炰笉鍘讳簡 灏辫繖鏍峰惂'},
+       {s:'me',k:'text',t:'濂藉惂 涓嶅悗鎮斿悧锛?,read:true}],
+ rules:[{k:'鍦ㄥ悧',r:'鎴戝湪鍛紝闅忔椂閮藉湪'},{k:'鎯充綘',r:'鎴戜篃鏄€傚皬闆ㄥ紑绐楃殑鏃跺€欙紝鏈€鎯充綘浜?}],
+ defReply:'鏀跺埌鍟︼紝绛変細鍎垮洖浣犮€?};
 function smsData(){if(!S.sms)S.sms=JSON.parse(JSON.stringify(SMS_DEF));return S.sms;}
 function smsTime(){const d=new Date();return d.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',hour12:false});}
 function renderSms(){
  const d=smsData();
  $('smsNum').textContent=d.num;$('smsName').textContent=d.name;
  $('smsAv').style.backgroundImage=d.avatar?`url("${d.avatar}")`:'';
- $('smsAv').textContent=d.avatar?'':'♡';
+ $('smsAv').textContent=d.avatar?'':'鈾?;
  $('smsBody').innerHTML=d.msgs.map((m,i)=>{
   let inner='';
-  if(m.k==='transfer')inner=`<div class="mbl transfer">转账<div class="amt">¥ ${esc(m.amt||'0.00')}</div><div class="note">${esc(m.t||'转账给你')}</div><div class="tt">微信转账 · WECHAT</div></div>`;
+  if(m.k==='transfer')inner=`<div class="mbl transfer">杞处<div class="amt">楼 ${esc(m.amt||'0.00')}</div><div class="note">${esc(m.t||'杞处缁欎綘')}</div><div class="tt">寰俊杞处 路 WECHAT</div></div>`;
   else if(m.k==='sticker')inner=`<div class="mbl st">${/^https?:|^data:/.test(m.t)?`<img src="${m.t}" alt="">`:`<span style="font-size:52px">${esc(m.t)}</span>`}</div>`;
   else inner=`<div class="mbl">${esc(m.t)}</div>`;
-  const time=`<div class="mtime">${esc(m.time||'')}${m.s==='me'&&m.read?' · Read':''}</div>`;
+  const time=`<div class="mtime">${esc(m.time||'')}${m.s==='me'&&m.read?' 路 Read':''}</div>`;
   return `<div class="mrow ${m.s}" data-mi="${i}">${inner}</div>${m.s==='me'?time:''}`;
- }).join('')||'<div class="sms-time">还没有消息，发一条试试</div>';
+ }).join('')||'<div class="sms-time">杩樻病鏈夋秷鎭紝鍙戜竴鏉¤瘯璇?/div>';
  $('smsBody').scrollTop=$('smsBody').scrollHeight;
  if(S.admin)$('smsBody').querySelectorAll('.mbl').forEach(b=>b.onclick=()=>{
   const i=+b.closest('.mrow').dataset.mi,m=d.msgs[i];
-  openSheet({title:'编辑这条消息',sub:m.s==='me'?'我':'对方',groups:[
-   [{id:'ed',label:m.k==='text'?'修改内容':'修改文字',run:()=>askText({title:'修改内容',value:m.t,onOk:v=>{m.t=v;save();renderSms();toast('已更新');}})}],
-   [{id:'sw',label:'换到'+(m.s==='me'?'对方':'我')+'一侧',run:()=>{m.s=m.s==='me'?'them':'me';save();renderSms();}}],
-   [{id:'del',label:'删除这条',br:true,run:()=>{d.msgs.splice(i,1);save();renderSms();toast('已删除');}}]]});});}
+  openSheet({title:'缂栬緫杩欐潯娑堟伅',sub:m.s==='me'?'鎴?:'瀵规柟',groups:[
+   [{id:'ed',label:m.k==='text'?'淇敼鍐呭':'淇敼鏂囧瓧',run:()=>askText({title:'淇敼鍐呭',value:m.t,onOk:v=>{m.t=v;save();renderSms();toast('宸叉洿鏂?);}})}],
+   [{id:'sw',label:'鎹㈠埌'+(m.s==='me'?'瀵规柟':'鎴?)+'涓€渚?,run:()=>{m.s=m.s==='me'?'them':'me';save();renderSms();}}],
+   [{id:'del',label:'鍒犻櫎杩欐潯',br:true,run:()=>{d.msgs.splice(i,1);save();renderSms();toast('宸插垹闄?);}}]]});});}
 function openSms(){renderSms();$('sms').classList.add('on');document.body.style.overflow='hidden';}
 function closeSms(){$('sms').classList.remove('on');document.body.style.overflow='';}
 $('smsBtn').onclick=openSms;
@@ -995,62 +1049,62 @@ function smsPush(s,k,extra){
  d.msgs.push(Object.assign({s,k,t:'',time:smsTime(),read:true},extra));
  save();renderSms();}
 function smsSend(){
- const v=$('smsInput').value.trim();if(!v)return toast('先写点什么吧');
+ const v=$('smsInput').value.trim();if(!v)return toast('鍏堝啓鐐逛粈涔堝惂');
  $('smsInput').value='';smsPush('me','text',{t:v});
- /* 自动回复 */
+ /* 鑷姩鍥炲 */
  const d=smsData();
  const rule=d.rules.find(r=>v.includes(r.k));
  const reply=rule?rule.r:d.defReply;
  if(reply)setTimeout(()=>{smsPush('them','text',{t:reply});
-  if($('sms').classList.contains('on'))toast('对方回复了');},900);}
+  if($('sms').classList.contains('on'))toast('瀵规柟鍥炲浜?);},900);}
 $('smsInput').addEventListener('keydown',e=>{if(e.key==='Enter')smsSend();});
-/* ＋菜单：转账 / 表情包上传 */
+/* 锛嬭彍鍗曪細杞处 / 琛ㄦ儏鍖呬笂浼?*/
 $('smsPlus').onclick=()=>{
- openSheet({title:'更多',sub:'SEND MORE',groups:[
-  [{id:'tf',label:'💰 转账',run:()=>{const submit=()=>{
+ openSheet({title:'鏇村',sub:'SEND MORE',groups:[
+  [{id:'tf',label:'馃挵 杞处',run:()=>{const submit=()=>{
     const a=$('tfA')?$('tfA').value.trim():'',n=$('tfN')?$('tfN').value.trim():'';
-    if(!a)return toast('请输入金额');
-    closeSheet();setTimeout(()=>{smsPush('me','transfer',{amt:parseFloat(a).toFixed(2),t:n||'转账给你'});},130);};
-   openSheet({title:'转账',sub:'TRANSFER',groups:[[
-    {id:'tfA',input:true,type:'number',placeholder:'金额，如 52.00',run:submit},
-    {id:'tfN',input:true,placeholder:'备注，如 请你喝奶茶',run:submit},
-    {id:'ok',label:'转出',run:submit}]]});
+    if(!a)return toast('璇疯緭鍏ラ噾棰?);
+    closeSheet();setTimeout(()=>{smsPush('me','transfer',{amt:parseFloat(a).toFixed(2),t:n||'杞处缁欎綘'});},130);};
+   openSheet({title:'杞处',sub:'TRANSFER',groups:[[
+    {id:'tfA',input:true,type:'number',placeholder:'閲戦锛屽 52.00',run:submit},
+    {id:'tfN',input:true,placeholder:'澶囨敞锛屽 璇蜂綘鍠濆ザ鑼?,run:submit},
+    {id:'ok',label:'杞嚭',run:submit}]]});
    setTimeout(()=>{const el=$('tfA');if(el)el.focus();},420);}},
-   {id:'stk',label:'🖼 发送表情包（上传图片）',run:()=>pickImage(u=>{smsPush('me','sticker',{t:u});})}]]});};
-/* 表情行 */
-const EMOJIS=['😀','😂','🥰','😭','😤','🥺','😴','🤔','👍','🙏','❤️','🎂','🌧','☔','🫧','☕','🍂','✨'];
+   {id:'stk',label:'馃柤 鍙戦€佽〃鎯呭寘锛堜笂浼犲浘鐗囷級',run:()=>pickImage(u=>{smsPush('me','sticker',{t:u});})}]]});};
+/* 琛ㄦ儏琛?*/
+const EMOJIS=['馃榾','馃槀','馃グ','馃槶','馃槫','馃ズ','馃槾','馃','馃憤','馃檹','鉂わ笍','馃巶','馃導','鈽?,'馃','鈽?,'馃崅','鉁?];
 $('emojiRow').innerHTML=EMOJIS.map(e=>`<button>${e}</button>`).join('');
 $('emojiRow').querySelectorAll('button').forEach(b=>b.onclick=()=>{
  smsPush('me','sticker',{t:b.textContent});$('emojiRow').classList.remove('on');});
 $('emojiBtn').onclick=()=>$('emojiRow').classList.toggle('on');
-/* ⚙ 设置：对方资料 / 自动回复 / 清空 */
+/* 鈿?璁剧疆锛氬鏂硅祫鏂?/ 鑷姩鍥炲 / 娓呯┖ */
 $('smsGear').onclick=()=>{
- if(!S.admin)return toast('访客模式 · 仅管理员可编辑');
+ if(!S.admin)return toast('璁垮妯″紡 路 浠呯鐞嗗憳鍙紪杈?);
  const d=smsData();
- const ruleRows=d.rules.map((r,i)=>({id:'r'+i,label:`「${r.k}」→ ${r.r.length>10?r.r.slice(0,10)+'…':r.r}`,sub:'点按编辑',run:()=>openRuleEdit(i)}));
- openSheet({title:'私聊设置',sub:'SMS SETTINGS',groups:[
-  [{id:'nm',label:'对方昵称 / 号码',sub:d.name+' · '+d.num,run:()=>askText({title:'对方昵称',value:d.name,onOk:v=>{d.name=v;save();renderSms();}})},
-   {id:'num',label:'号码（左上角）',sub:d.num,run:()=>askText({title:'号码',value:d.num,onOk:v=>{d.num=v;save();renderSms();}})},
-   {id:'av',label:'更换对方头像',run:()=>pickImage(u=>{d.avatar=u;save();renderSms();toast('头像已更新');})}],
+ const ruleRows=d.rules.map((r,i)=>({id:'r'+i,label:`銆?{r.k}銆嶁啋 ${r.r.length>10?r.r.slice(0,10)+'鈥?:r.r}`,sub:'鐐规寜缂栬緫',run:()=>openRuleEdit(i)}));
+ openSheet({title:'绉佽亰璁剧疆',sub:'SMS SETTINGS',groups:[
+  [{id:'nm',label:'瀵规柟鏄电О / 鍙风爜',sub:d.name+' 路 '+d.num,run:()=>askText({title:'瀵规柟鏄电О',value:d.name,onOk:v=>{d.name=v;save();renderSms();}})},
+   {id:'num',label:'鍙风爜锛堝乏涓婅锛?,sub:d.num,run:()=>askText({title:'鍙风爜',value:d.num,onOk:v=>{d.num=v;save();renderSms();}})},
+   {id:'av',label:'鏇存崲瀵规柟澶村儚',run:()=>pickImage(u=>{d.avatar=u;save();renderSms();toast('澶村儚宸叉洿鏂?);})}],
   ruleRows,
-  [{id:'addR',label:'＋ 添加自动回复规则',run:()=>openRuleEdit(-1)},
-   {id:'defR',label:'默认自动回复',sub:d.defReply.slice(0,10)+'…',run:()=>askText({title:'默认自动回复',value:d.defReply,onOk:v=>{d.defReply=v;save();toast('已更新');}})}],
-  [{id:'clr',label:'清空聊天记录',br:true,run:()=>{d.msgs=[];save();renderSms();toast('已清空');}}]]});};
+  [{id:'addR',label:'锛?娣诲姞鑷姩鍥炲瑙勫垯',run:()=>openRuleEdit(-1)},
+   {id:'defR',label:'榛樿鑷姩鍥炲',sub:d.defReply.slice(0,10)+'鈥?,run:()=>askText({title:'榛樿鑷姩鍥炲',value:d.defReply,onOk:v=>{d.defReply=v;save();toast('宸叉洿鏂?);}})}],
+  [{id:'clr',label:'娓呯┖鑱婂ぉ璁板綍',br:true,run:()=>{d.msgs=[];save();renderSms();toast('宸叉竻绌?);}}]]});};
 function openRuleEdit(i){
  const d=smsData();
  const r=i>=0?d.rules[i]:{k:'',r:''};
  const submit=()=>{const k=$('rK')?$('rK').value.trim():'',v=$('rR')?$('rR').value.trim():'';
-  if(!k||!v)return toast('关键词和回复都要填');
+  if(!k||!v)return toast('鍏抽敭璇嶅拰鍥炲閮借濉?);
   closeSheet();setTimeout(()=>{
    if(i>=0)d.rules[i]={k,r:v};else d.rules.push({k,r:v});
-   save();toast('规则已保存');},130);};
- openSheet({title:i>=0?'编辑规则':'添加规则',sub:'AUTO REPLY · 对方会根据关键词自动回复',groups:[[
-  {id:'rK',input:true,value:r.k,placeholder:'关键词，如 在吗',run:submit},
-  {id:'rR',input:true,value:r.r,placeholder:'自动回复内容',run:submit},
-  {id:'ok',label:'保存',run:submit}],
-  i>=0?[{id:'del',label:'删除这条规则',br:true,run:()=>{d.rules.splice(i,1);save();toast('已删除');}}]:[]]});}
+   save();toast('瑙勫垯宸蹭繚瀛?);},130);};
+ openSheet({title:i>=0?'缂栬緫瑙勫垯':'娣诲姞瑙勫垯',sub:'AUTO REPLY 路 瀵规柟浼氭牴鎹叧閿瘝鑷姩鍥炲',groups:[[
+  {id:'rK',input:true,value:r.k,placeholder:'鍏抽敭璇嶏紝濡?鍦ㄥ悧',run:submit},
+  {id:'rR',input:true,value:r.r,placeholder:'鑷姩鍥炲鍐呭',run:submit},
+  {id:'ok',label:'淇濆瓨',run:submit}],
+  i>=0?[{id:'del',label:'鍒犻櫎杩欐潯瑙勫垯',br:true,run:()=>{d.rules.splice(i,1);save();toast('宸插垹闄?);}}]:[]]});}
 
-/* 擦雾开屏 + 水波（第一版特效） */
+/* 鎿﹂浘寮€灞?+ 姘存尝锛堢涓€鐗堢壒鏁堬級 */
 const fog=$('fog'),fx=fog.getContext('2d');
 const rip=$('ripple'),rx=rip.getContext('2d');
 let W=0,H=0,DPR=Math.min(window.devicePixelRatio||1,2),noise=null;
@@ -1125,9 +1179,11 @@ $('againBtn').onclick=()=>{auto=false;erased=0;rips.length=0;$('barIn').style.wi
  $('enter').classList.remove('show');paintFog();$('splash').classList.remove('gone');};
 fog.addEventListener('click',()=>{if(erased<=.10)$('enter').classList.add('show');});
 
-/* 启动 */
+/* 鍚姩 */
 applyWallpaper();renderChips();renderToday();renderModGrid();applyRole();renderCF();
 setWeather(S.weather||'mist',true);
+// 浠庢湇鍔″櫒鍔犺浇鏁版嵁
+loadFromAPI();
 </script>
 </body>
 </html>
